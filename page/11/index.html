@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Redis">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Redis文档">
+<meta property="og:url" content="http://yoursite.com/page/11/index.html">
+<meta property="og:site_name" content="Redis文档">
+<meta property="og:description" content="Redis">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Redis文档">
+<meta name="twitter:description" content="Redis">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/11/"/>
+
+
+
+
+
+  <title>Redis文档</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Redis文档</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Redis在Java上的使用手册</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/incr/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/incr/" itemprop="url">incr</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T17:22:30+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>对存储在指定key的数值执行原子的加1操作。</p>
+<p>如果指定的key不存在，那么在执行incr操作之前，会先将它的值设定为0。</p>
+<p>如果指定的key中存储的值不是字符串类型（fix：）或者存储的字符串类型不能表示为一个整数，</p>
+<p>那么执行这个命令时服务器会返回一个错误(eq:(error) ERR value is not an integer or out of range)。</p>
+<p>这个操作仅限于64位的有符号整型数据。</p>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>由于redis并没有一个明确的类型来表示整型数据，所以这个操作是一个字符串操作。</p>
+<p>执行这个操作的时候，key对应存储的字符串被解析为10进制的64位有符号整型数据。</p>
+<p>事实上，Redis 内部采用整数形式（Integer representation）来存储对应的整数值，所以对该类字符串值实际上是用整数保存，也就不存在存储整数的字符串表示（String representation）所带来的额外消耗。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 1.0.0</li>
+<li>时间复杂度: O(1)</li>
+<li>返回值: Integers,执行递增操作后key对应的值。</li>
+</ul>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET mykey <span class="string">"10"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; INCR mykey</span><br><span class="line">(<span class="built_in">integer</span>) 11</span><br><span class="line">redis&gt; GET mykey</span><br><span class="line"><span class="string">"11"</span></span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="SpringBoot-例子"><a href="#SpringBoot-例子" class="headerlink" title="SpringBoot 例子"></a>SpringBoot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"testKey存在测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyExistsTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 设置testKey的值为1024</span></span><br><span class="line">        stringRedisTemplate.opsForValue().set(testKey, <span class="string">"1024"</span>);</span><br><span class="line">        <span class="comment">// incr testKey</span></span><br><span class="line">        Long incrResult = stringRedisTemplate.execute((RedisCallback&lt;Long&gt;) connection -&gt; connection.incr(testKeySerializeBytes));</span><br><span class="line">        logger.info(<span class="string">"incrResult:&#123;&#125;"</span>, incrResult);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"testKey不存在测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyNotExistsTest</span><span class="params">()</span></span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// incr testKey</span></span><br><span class="line">        Long incrResult = stringRedisTemplate.execute((RedisCallback&lt;Long&gt;) connection -&gt; connection.incr(testKeySerializeBytes));</span><br><span class="line">        logger.info(<span class="string">"incrResult:&#123;&#125;"</span>, incrResult);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="实例：计数器"><a href="#实例：计数器" class="headerlink" title="实例：计数器"></a>实例：计数器</h3><p>Redis的原子递增操作最常用的使用场景是计数器。</p>
+<p>使用思路是：每次有相关操作的时候，就向Redis服务器发送一个incr命令。</p>
+<p>例如这样一个场景：我们有一个web应用，我们想记录每个用户每天访问这个网站的次数。</p>
+<p>web应用只需要通过拼接用户id和代表当前时间的字符串作为key，每次用户访问这个页面的时候对这个key执行一下incr命令。</p>
+<p>这个场景可以有很多种扩展方法:</p>
+<ul>
+<li>通过结合使用INCR和EXPIRE命令，可以实现一个只记录用户在指定间隔时间内的访问次数的计数器</li>
+<li>客户端可以通过GETSET命令获取当前计数器的值并且重置为0</li>
+<li>通过类似于DECR或者INCRBY等原子递增/递减的命令，可以根据用户的操作来增加或者减少某些值 比如在线游戏，需要对用户的游戏分数进行实时控制，分数可能增加也可能减少。</li>
+</ul>
+<h3 id="实例：限速器"><a href="#实例：限速器" class="headerlink" title="实例：限速器"></a>实例：限速器</h3><p>限速器是一种可以限制某些操作执行速率的特殊场景。</p>
+<p>传统的例子就是限制某个公共api的请求数目。</p>
+<p>假设我们要解决如下问题：限制某个api每秒每个ip的请求次数不超过10次。</p>
+<p>我们可以通过incr命令来实现两种方法解决这个问题。</p>
+<h4 id="实例-限速器-1"><a href="#实例-限速器-1" class="headerlink" title="实例: 限速器 1"></a>实例: 限速器 1</h4><p>更加简单和直接的实现如下：<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">FUNCTION LIMIT_API_CALL(ip)</span><br><span class="line">ts = CURRENT_UNIX_TIME()</span><br><span class="line">keyname = ip+<span class="string">":"</span>+ts</span><br><span class="line">current = GET(keyname)</span><br><span class="line">IF current != NULL AND current &gt; <span class="number">10</span> THEN</span><br><span class="line">    ERROR <span class="string">"too many requests per second"</span></span><br><span class="line">ELSE</span><br><span class="line">    MULTI</span><br><span class="line">        INCR(keyname,<span class="number">1</span>)</span><br><span class="line">        EXPIRE(keyname,<span class="number">10</span>)</span><br><span class="line">    EXEC</span><br><span class="line">    PERFORM_API_CALL()</span><br><span class="line">END</span><br></pre></td></tr></table></figure></p>
+<h4 id="实例-限速器-2"><a href="#实例-限速器-2" class="headerlink" title="实例: 限速器 2"></a>实例: 限速器 2</h4><p>另外一个实现是对每个ip只用一个单独的计数器（不是每秒生成一个），但是需要注意避免竟态条件。 我们会对多种不同的变量进行测试。<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">FUNCTION LIMIT_API_CALL(ip):</span><br><span class="line">current = GET(ip)</span><br><span class="line">IF current != NULL AND current &gt; <span class="number">10</span> THEN</span><br><span class="line">    ERROR <span class="string">"too many requests per second"</span></span><br><span class="line">ELSE</span><br><span class="line">    value = INCR(ip)</span><br><span class="line">    IF value == <span class="number">1</span> THEN</span><br><span class="line">        EXPIRE(value,<span class="number">1</span>)</span><br><span class="line">    END</span><br><span class="line">    PERFORM_API_CALL()</span><br><span class="line">END</span><br></pre></td></tr></table></figure></p>
+<p>上述方法的思路是，从第一个请求开始设置过期时间为1秒。如果1秒内请求数超过了10个，那么会抛异常。</p>
+<p>否则，计数器会清零。</p>
+<p>上述代码中，可能会进入竞态条件，比如客户端在执行INCR之后，没有成功设置EXPIRE时间。这个ip的key 会造成内存泄漏，直到下次有同一个ip发送相同的请求过来。</p>
+<p>把上述INCR和EXPIRE命令写在lua脚本并执行EVAL命令可以避免上述问题（只有redis版本&gt;＝2.6才可以使用）</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> current</span><br><span class="line">current = redis.call(<span class="string">"incr"</span>,KEYS[<span class="number">1</span>])</span><br><span class="line"><span class="keyword">if</span> <span class="built_in">tonumber</span>(current) == <span class="number">1</span> <span class="keyword">then</span></span><br><span class="line">    redis.call(<span class="string">"expire"</span>,KEYS[<span class="number">1</span>],<span class="number">1</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>还可以通过使用redis的list来解决上述问题避免进入竞态条件。</p>
+<p>实现代码更加复杂并且利用了一些redis的新的feature，可以记录当前请求的客户端ip地址。这个有没有好处 取决于应用程序本身。</p>
+<pre><code class="lua">FUNCTION LIMIT_API_CALL(ip)
+current = LLEN(ip)
+IF current &gt; <span class="number">10</span> THEN
+    ERROR <span class="string">"too many requests per second"</span>
+ELSE
+    IF EXISTS(ip) == FALSE
+        MULTI
+            RPUSH(ip,ip)
+            EXPIRE(ip,<span class="number">1</span>)
+        EXEC
+    ELSE
+        RPUSHX(ip,ip)
+    END
+    PERFORM_API_CALL()
+END
+</code></pre>
+<p>The RPUSHX command only pushes the element if the key already exists.</p>
+<p>RPUSHX命令会往list中插入一个元素，如果key存在的话</p>
+<p>上述实现也可能会出现竞态，比如我们在执行EXISTS指令之后返回了false，但是另外一个客户端创建了这个key。</p>
+<p>后果就是我们会少记录一个请求。但是这种情况很少出现，所以我们的请求限速器还是能够运行良好的。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/getset/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/getset/" itemprop="url">getset</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T17:12:07+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>自动将key对应到value并且返回原来key对应的value。如果key存在但是对应的value不是字符串，就返回错误。</p>
+<p>设计模式</p>
+<p>GETSET可以和INCR一起使用实现支持重置的计数功能。举个例子：每当有事件发生的时候，一段程序都会调用INCR给key mycounter加1，但是有时我们需要获取计数器的值，并且自动将其重置为0。这可以通过GETSET mycounter “0”来实现：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INCR mycounter</span><br><span class="line">GETSET mycounter <span class="string">"0"</span></span><br><span class="line">GET mycounter</span><br></pre></td></tr></table></figure></p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 1.0.0</li>
+<li>时间复杂度: O(1)</li>
+<li>返回值: String</li>
+</ul>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; INCR mycounter</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; GETSET mycounter <span class="string">"0"</span></span><br><span class="line"><span class="string">"1"</span></span><br><span class="line">redis&gt; GET mycounter</span><br><span class="line"><span class="string">"0"</span></span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="SpringBoot-例子"><a href="#SpringBoot-例子" class="headerlink" title="SpringBoot 例子"></a>SpringBoot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"默认测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">genericTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 设置testKey的value为1</span></span><br><span class="line">        stringRedisTemplate.opsForValue().set(testKey, <span class="string">"1"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// GETSET testKey</span></span><br><span class="line">        String result = stringRedisTemplate.opsForValue().getAndSet(testKey, <span class="string">"2"</span>);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"result is &#123;&#125;"</span>, result);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key不存在Test"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyNotExistTest</span><span class="params">()</span></span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testNotExistKey:%s"</span>,UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// GETSET testKey</span></span><br><span class="line">        String result = stringRedisTemplate.opsForValue().getAndSet(testKey, <span class="string">"2"</span>);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"result is &#123;&#125;"</span>, result);</span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/getrange/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/getrange/" itemprop="url">getrange</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T16:59:32+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>警告：这个命令是被改成GETRANGE的，在小于2.0的Redis版本中叫SUBSTR。 返回key对应的字符串value的子串，这个子串是由start和end位移决定的（两者都在string内）。可以用负的位移来表示从string尾部开始数的下标。所以-1就是最后一个字符，-2就是倒数第二个，以此类推。</p>
+<p>这个函数处理超出范围的请求时，都把结果限制在string内。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 2.4.0</li>
+<li>时间复杂度: O(N) N是字符串长度，复杂度由最终返回长度决定，但由于通过一个字符串创建子字符串是很容易的，它可以被认为是O(1)。</li>
+<li>返回值: String</li>
+</ul>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET mykey <span class="string">"This is a string"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; GETRANGE mykey 0 3</span><br><span class="line"><span class="string">"This"</span></span><br><span class="line">redis&gt; GETRANGE mykey -3 -1</span><br><span class="line"><span class="string">"ing"</span></span><br><span class="line">redis&gt; GETRANGE mykey 0 -1</span><br><span class="line"><span class="string">"This is a string"</span></span><br><span class="line">redis&gt; GETRANGE mykey 10 100</span><br><span class="line"><span class="string">"string"</span></span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="SpringBoot-例子"><a href="#SpringBoot-例子" class="headerlink" title="SpringBoot 例子"></a>SpringBoot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key存在测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyExistsTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"序列化testKey失败"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 设置字符串为hello word</span></span><br><span class="line">        stringRedisTemplate.opsForValue().set(testKey, <span class="string">"hello word"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// GETRANGE testKey 0 3</span></span><br><span class="line">        String resultString = stringRedisTemplate.execute((RedisCallback&lt;String&gt;) connection -&gt; &#123;</span><br><span class="line">            <span class="keyword">byte</span>[] resultBytes = connection.getRange(testKeySerializeBytes, <span class="number">0</span>, <span class="number">3</span>);</span><br><span class="line">            <span class="keyword">if</span> (resultBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> String(resultBytes);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"resultString is &#123;&#125;"</span>, resultString);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key不存在测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyNotExistsTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testNotKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"序列化testKey失败"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// GETRANGE testKey 0 3</span></span><br><span class="line">        String resultString = stringRedisTemplate.execute((RedisCallback&lt;String&gt;) connection -&gt; &#123;</span><br><span class="line">            <span class="keyword">byte</span>[] resultBytes = connection.getRange(testKeySerializeBytes, <span class="number">0</span>, <span class="number">13</span>);</span><br><span class="line">            <span class="keyword">if</span> (resultBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> String(resultBytes);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"resultString is &#123;&#125;"</span>, resultString);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/getbit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/getbit/" itemprop="url">getbit</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T16:49:15+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>返回key对应的string在offset处的bit值 当offset超出了字符串长度的时候，这个字符串就被假定为由0比特填充的连续空间。当key不存在的时候，它就认为是一个空字符串，所以offset总是超出范围，然后value也被认为是由0比特填充的连续空间。到内存分配。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 2.2.0</li>
+<li>时间复杂度: O(1)</li>
+<li>返回值: Integers,在offset处的bit值</li>
+</ul>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SETBIT mykey 7 1</span><br><span class="line">(<span class="built_in">integer</span>) 0</span><br><span class="line">redis&gt; GETBIT mykey 0</span><br><span class="line">(<span class="built_in">integer</span>) 0</span><br><span class="line">redis&gt; GETBIT mykey 7</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; GETBIT mykey 100</span><br><span class="line">(<span class="built_in">integer</span>) 0</span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="SpringBoot-例子"><a href="#SpringBoot-例子" class="headerlink" title="SpringBoot 例子"></a>SpringBoot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"默认测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">genericTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="comment">// SETBIT mykey 7 1</span></span><br><span class="line">    stringRedisTemplate.opsForValue().setBit(testKey, <span class="number">7</span>, <span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// GETBIT mykey 7</span></span><br><span class="line">    Boolean result = stringRedisTemplate.opsForValue().getBit(testKey, <span class="number">7</span>);</span><br><span class="line">    logger.info(<span class="string">"result:&#123;&#125;"</span>, result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/get/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/get/" itemprop="url">get</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T16:39:58+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>返回key的value。如果key不存在，返回特殊值nil。如果key的value不是string，就返回错误，因为GET只处理string类型的values。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 1.0.0</li>
+<li>时间复杂度: O(1)</li>
+<li>返回值: String,key对应的value，或者nil（key不存在时）</li>
+</ul>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; GET nonexisting</span><br><span class="line">(nil)</span><br><span class="line">redis&gt; SET mykey <span class="string">"Hello"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; GET mykey</span><br><span class="line"><span class="string">"Hello"</span></span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="SpringBoot-例子"><a href="#SpringBoot-例子" class="headerlink" title="SpringBoot 例子"></a>SpringBoot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key存在"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 设置testKey的value为val</span></span><br><span class="line">    stringRedisTemplate.opsForValue().set(testKey, <span class="string">"val"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// get testKey</span></span><br><span class="line">    String value = stringRedisTemplate.opsForValue().get(testKey);</span><br><span class="line">    logger.info(<span class="string">"get result is &#123;&#125;"</span>, value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key不存在"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyNotExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line"></span><br><span class="line">    <span class="comment">// get testKey</span></span><br><span class="line">    String value = stringRedisTemplate.opsForValue().get(testKey);</span><br><span class="line">    logger.info(<span class="string">"get result is &#123;&#125;"</span>, value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/decrby/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/decrby/" itemprop="url">decrby</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T16:25:58+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>将key对应的数字减decrement。如果key不存在，操作之前，key就会被置为0。如果key的value类型错误或者是个不能表示成数字的字符串，就返回错误。这个操作最多支持64位有符号的正型数字。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 1.0.0</li>
+<li>时间复杂度: O(1)</li>
+<li>返回值: Integers,减小之后的value</li>
+</ul>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET mykey <span class="string">"10"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; DECRBY mykey 5</span><br><span class="line">(<span class="built_in">integer</span>) 5</span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="SpringBoot-例子"><a href="#SpringBoot-例子" class="headerlink" title="SpringBoot 例子"></a>SpringBoot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key不存在的测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyNotExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; keySerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getKeySerializer();</span><br><span class="line"></span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span>(testKeySerializeBytes == <span class="keyword">null</span>)&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"testKey异常"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        Long executeResult = stringRedisTemplate.execute((RedisCallback&lt;Long&gt;) connection -&gt; connection.decrBy(testKeySerializeBytes, <span class="number">1</span>));</span><br><span class="line">        logger.info(<span class="string">"decrBy executeResult:&#123;&#125;"</span>, executeResult);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key存在的测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; keySerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getKeySerializer();</span><br><span class="line"></span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; valueSerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getValueSerializer();</span><br><span class="line"></span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line"></span><br><span class="line">    <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span>(testKeySerializeBytes == <span class="keyword">null</span>)&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"testKey异常"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 设置testKey的值为123</span></span><br><span class="line">        stringRedisTemplate.opsForValue().set(testKey,<span class="string">"123"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// decrBy 1</span></span><br><span class="line">        Long executeResult = stringRedisTemplate.execute((RedisCallback&lt;Long&gt;) connection -&gt; connection.decrBy(testKeySerializeBytes, <span class="number">1</span>));</span><br><span class="line">        logger.info(<span class="string">"decrBy executeResult:&#123;&#125;"</span>, executeResult);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/distlock/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/15/distlock/" itemprop="url">Redis分布式锁</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T15:41:37+08:00">
+                2018-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>分布式锁在很多场景中是非常有用的原语， 不同的进程必须以独占资源的方式实现资源共享就是一个典型的例子。</p>
+<p>有很多分布式锁的库和描述怎么实现分布式锁管理器（DLM)的博客,但是每个库的实现方式都不太一样，很多库的实现方式为了简单降低了可靠性，而有的使用了稍微复杂的设计。</p>
+<p>这个页面试图提供一个使用Redis实现分布式锁的规范算法。我们提出一种算法，叫Redlock,我们认为这种实现比普通的单实例实现更安全,我们希望redis社区能帮助分析一下这种实现方法，并给我们提供反馈。</p>
+<h3 id="安全和活性失效保障"><a href="#安全和活性失效保障" class="headerlink" title="安全和活性失效保障"></a>安全和活性失效保障</h3><p>按照我们的思路和设计方案，算法只需具备3个特性就可以实现一个最低保障的分布式锁。</p>
+<ul>
+<li>安全属性（Safety property）: 独享（相互排斥）。在任意一个时刻，只有一个客户端持有锁。</li>
+<li>活性A(Liveness property A): 无死锁。即便持有锁的客户端崩溃（crashed)或者网络被分裂（gets partitioned)，锁仍然可以被获取。</li>
+<li>活性B(Liveness property B): 容错。 只要大部分Redis节点都活着，客户端就可以获取和释放锁.</li>
+</ul>
+<h3 id="为什么基于故障转移的实现还不够"><a href="#为什么基于故障转移的实现还不够" class="headerlink" title="为什么基于故障转移的实现还不够"></a>为什么基于故障转移的实现还不够</h3><p>为了更好的理解我们想要改进的方面，我们先分析一下当前大多数基于Redis的分布式锁现状和实现方法.</p>
+<p>实现Redis分布式锁的最简单的方法就是在Redis中创建一个key，这个key有一个失效时间（TTL)，以保证锁最终会被自动释放掉（这个对应特性2）。当客户端释放资源(解锁）的时候，会删除掉这个key。</p>
+<p>从表面上看，似乎效果还不错，但是这里有一个问题：这个架构中存在一个严重的单点失败问题。如果Redis挂了怎么办？你可能会说，可以通过增加一个slave节点解决这个问题。但这通常是行不通的。这样做，我们不能实现资源的独享,因为Redis的主从同步通常是异步的。</p>
+<p>在这种场景（主从结构）中存在明显的竞态:</p>
+<ul>
+<li>客户端A从master获取到锁</li>
+<li>在master将锁同步到slave之前，master宕掉了。</li>
+<li>slave节点被晋级为master节点</li>
+<li>客户端B取得了同一个资源被客户端A已经获取到的另外一个锁。安全失效！</li>
+</ul>
+<p>有时候程序就是这么巧，比如说正好一个节点挂掉的时候，多个客户端同时取到了锁。如果你可以接受这种小概率错误，那用这个基于复制的方案就完全没有问题。否则的话，我们建议你实现下面描述的解决方案。</p>
+<h3 id="单Redis实例实现分布式锁的正确方法"><a href="#单Redis实例实现分布式锁的正确方法" class="headerlink" title="单Redis实例实现分布式锁的正确方法"></a>单Redis实例实现分布式锁的正确方法</h3><p>在尝试克服上述单实例设置的限制之前，让我们先讨论一下在这种简单情况下实现分布式锁的正确做法，实际上这是一种可行的方案，尽管存在竞态，结果仍然是可接受的，另外，这里讨论的单实例加锁方法也是分布式加锁算法的基础。</p>
+<p>获取锁使用命令:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET resource_name my_random_value NX PX 30000</span><br></pre></td></tr></table></figure></p>
+<p>这个命令仅在不存在key的时候才能被执行成功（NX选项），并且这个key有一个30秒的自动失效时间（PX属性）。这个key的值是“my_random_value”(一个随机值），这个值在所有的客户端必须是唯一的，所有同一key的获取者（竞争者）这个值都不能一样。</p>
+<p>value的值必须是随机数主要是为了更安全的释放锁，释放锁的时候使用脚本告诉Redis:只有key存在并且存储的值和我指定的值一样才能告诉我删除成功。可以通过以下Lua脚本实现：<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> redis.call(<span class="string">"get"</span>,KEYS[<span class="number">1</span>]) == ARGV[<span class="number">1</span>] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">return</span> redis.call(<span class="string">"del"</span>,KEYS[<span class="number">1</span>])</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
+<p>使用这种方式释放锁可以避免删除别的客户端获取成功的锁。举个例子：客户端A取得资源锁，但是紧接着被一个其他操作阻塞了，当客户端A运行完毕其他操作后要释放锁时，原来的锁早已超时并且被Redis自动释放，并且在这期间资源锁又被客户端B再次获取到。如果仅使用DEL命令将key删除，那么这种情况就会把客户端B的锁给删除掉。使用Lua脚本就不会存在这种情况，因为脚本仅会删除value等于客户端A的value的key（value相当于客户端的一个签名）。</p>
+<p>这个随机字符串应该怎么设置？我认为它应该是从/dev/urandom产生的一个20字节随机数，但是我想你可以找到比这种方法代价更小的方法，只要这个数在你的任务中是唯一的就行。例如一种安全可行的方法是使用/dev/urandom作为RC4的种子和源产生一个伪随机流;一种更简单的方法是把以毫秒为单位的unix时间和客户端ID拼接起来，理论上不是完全安全，但是在多数情况下可以满足需求.</p>
+<p>key的失效时间，被称作“锁定有效期”。它不仅是key自动失效时间，而且还是一个客户端持有锁多长时间后可以被另外一个客户端重新获得。</p>
+<p>截至到目前，我们已经有较好的方法获取锁和释放锁。基于Redis单实例，假设这个单实例总是可用，这种方法已经足够安全。现在让我们扩展一下，假设Redis没有总是可用的保障。</p>
+<h3 id="Redlock算法"><a href="#Redlock算法" class="headerlink" title="Redlock算法"></a>Redlock算法</h3><p>在Redis的分布式环境中，我们假设有N个Redis master。这些节点完全互相独立，不存在主从复制或者其他集群协调机制。之前我们已经描述了在Redis单实例下怎么安全地获取和释放锁。我们确保将在每（N)个实例上使用此方法获取和释放锁。在这个样例中，我们假设有5个Redis master节点，这是一个比较合理的设置，所以我们需要在5台机器上面或者5台虚拟机上面运行这些实例，这样保证他们不会同时都宕掉。</p>
+<p>为了取到锁，客户端应该执行以下操作:</p>
+<ul>
+<li>获取当前Unix时间，以毫秒为单位。</li>
+<li>依次尝试从N个实例，使用相同的key和随机值获取锁。在步骤2，当向Redis设置锁时,客户端应该设置一个网络连接和响应超时时间，这个超时时间应该小于锁的失效时间。例如你的锁自动失效时间为10秒，则超时时间应该在5-50毫秒之间。这样可以避免服务器端Redis已经挂掉的情况下，客户端还在死死地等待响应结果。如果服务器端没有在规定时间内响应，客户端应该尽快尝试另外一个Redis实例。</li>
+<li>客户端使用当前时间减去开始获取锁时间（步骤1记录的时间）就得到获取锁使用的时间。当且仅当从大多数（这里是3个节点）的Redis节点都取到锁，并且使用的时间小于锁失效时间时，锁才算获取成功。</li>
+<li>如果取到了锁，key的真正有效时间等于有效时间减去获取锁所使用的时间（步骤3计算的结果）。</li>
+<li>如果因为某些原因，获取锁失败（没有在至少N/2+1个Redis实例取到锁或者取锁时间已经超过了有效时间），客户端应该在所有的Redis实例上进行解锁（即便某些Redis实例根本就没有加锁成功）。</li>
+</ul>
+<h3 id="这个算法是异步的么"><a href="#这个算法是异步的么" class="headerlink" title="这个算法是异步的么?"></a>这个算法是异步的么?</h3><p>算法基于这样一个假设：虽然多个进程之间没有时钟同步，但每个进程都以相同的时钟频率前进，时间差相对于失效时间来说几乎可以忽略不计。这种假设和我们的真实世界非常接近：每个计算机都有一个本地时钟，我们可以容忍多个计算机之间有较小的时钟漂移。</p>
+<p>从这点来说，我们必须再次强调我们的互相排斥规则：只有在锁的有效时间（在步骤3计算的结果）范围内客户端能够做完它的工作，锁的安全性才能得到保证（锁的实际有效时间通常要比设置的短，因为计算机之间有时钟漂移的现象）。</p>
+<h3 id="失败时重试"><a href="#失败时重试" class="headerlink" title="失败时重试"></a>失败时重试</h3><p>当客户端无法取到锁时，应该在一个随机延迟后重试,防止多个客户端在同时抢夺同一资源的锁（这样会导致脑裂，没有人会取到锁）。同样，客户端取得大部分Redis实例锁所花费的时间越短，脑裂出现的概率就会越低（必要的重试），所以，理想情况一下，客户端应该同时（并发地）向所有Redis发送SET命令。</p>
+<p>需要强调，当客户端从大多数Redis实例获取锁失败时，应该尽快地释放（部分）已经成功取到的锁，这样其他的客户端就不必非得等到锁过完“有效时间”才能取到（然而，如果已经存在网络分裂，客户端已经无法和Redis实例通信，此时就只能等待key的自动释放了，等于被惩罚了）。</p>
+<h3 id="释放锁"><a href="#释放锁" class="headerlink" title="释放锁"></a>释放锁</h3><p>释放锁比较简单，向所有的Redis实例发送释放锁命令即可，不用关心之前有没有从Redis实例成功获取到锁.</p>
+<h3 id="安全争议"><a href="#安全争议" class="headerlink" title="安全争议"></a>安全争议</h3><p>这个算法安全么？我们可以从不同的场景讨论一下。</p>
+<p>让我们假设客户端从大多数Redis实例取到了锁。所有的实例都包含同样的key，并且key的有效时间也一样。然而，key肯定是在不同的时间被设置上的，所以key的失效时间也不是精确的相同。我们假设第一个设置的key时间是T1(开始向第一个server发送命令前时间），最后一个设置的key时间是T2(得到最后一台server的答复后的时间），我们可以确认，第一个server的key至少会存活 MIN_VALIDITY=TTL-(T2-T1)-CLOCK_DRIFT。所有其他的key的存活时间，都会比这个key时间晚，所以可以肯定，所有key的失效时间至少是MIN_VALIDITY。</p>
+<p>当大部分实例的key被设置后，其他的客户端将不能再取到锁，因为至少N/2+1个实例已经存在key。所以，如果一个锁被（客户端）获取后，客户端自己也不能再次申请到锁(违反互相排斥属性）。</p>
+<p>然而我们也想确保，当多个客户端同时抢夺一个锁时不能两个都成功。</p>
+<p>如果客户端在获取到大多数redis实例锁，使用的时间接近或者已经大于失效时间，客户端将认为锁是失效的锁，并且将释放掉已经获取到的锁，所以我们只需要在有效时间范围内获取到大部分锁这种情况。在上面已经讨论过有争议的地方，在MIN_VALIDITY时间内，将没有客户端再次取得锁。所以只有一种情况，多个客户端会在相同时间取得N/2+1实例的锁，那就是取得锁的时间大于失效时间（TTL time)，这样取到的锁也是无效的.</p>
+<p>如果你能提供关于现有的类似算法的一个正式证明（指出正确性），或者是发现这个算法的bug？ 我们将非常感激.</p>
+<h3 id="活性争议"><a href="#活性争议" class="headerlink" title="活性争议"></a>活性争议</h3><p>系统的活性安全基于三个主要特性:</p>
+<ul>
+<li>锁的自动释放（因为key失效了）：最终锁可以再次被使用.</li>
+<li>客户端通常会将没有获取到的锁删除，或者锁被取到后，使用完后，客户端会主动（提前）释放锁，而不是等到锁失效另外的客户端才能取到锁。.</li>
+<li>当客户端重试获取锁时，需要等待一段时间，这个时间必须大于从大多数Redis实例成功获取锁使用的时间，以最大限度地避免脑裂。.<br>然而，当网络出现问题时系统在失效时间(TTL)内就无法服务，这种情况下我们的程序就会为此付出代价。如果网络持续的有问题，可能就会出现死循环了。 这种情况发生在当客户端刚取到一个锁还没有来得及释放锁就被网络隔离.<br>如果网络一直没有恢复，这个算法会导致系统不可用.</li>
+</ul>
+<h3 id="性能，崩溃恢复和Redis同步"><a href="#性能，崩溃恢复和Redis同步" class="headerlink" title="性能，崩溃恢复和Redis同步"></a>性能，崩溃恢复和Redis同步</h3><p>很多用户把Redis当做分布式锁服务器，使用获取锁和释放锁的响应时间，每秒钟可用执行多少次 acquire / release 操作作为性能指标。为了达到这一要求，增加Redis实例当然可用降低响应延迟（没有钱买硬件的”穷人”,也可以在网络方面做优化，使用非阻塞模型，一次发送所有的命令，然后异步的读取响应结果，假设客户端和redis服务器之间的RTT都差不多。</p>
+<p>然而，如果我们想使用可以从备份中恢复的redis模式，有另外一种持久化情况你需要考虑，.</p>
+<p>我们考虑这样一种场景，假设我们的redis没用使用备份。一个客户端获取到了3个实例的锁。此时，其中一个已经被客户端取到锁的redis实例被重启，在这个时间点，就可能出现3个节点没有设置锁，此时如果有另外一个客户端来设置锁，锁就可能被再次获取到，这样锁的互相排斥的特性就被破坏掉了。</p>
+<p>如果我们启用了AOF持久化，情况会好很多。我们可用使用SHUTDOWN命令关闭然后再次重启。因为Redis到期是语义上实现的，所以当服务器关闭时，实际上还是经过了时间，所有（保持锁）需要的条件都没有受到影响. 没有受到影响的前提是redis优雅的关闭。停电了怎么办？如果redis是每秒执行一次fsync，那么很有可能在redis重启之后，key已经丢弃。理论上，如果我们想在Redis重启地任何情况下都保证锁的安全，我们必须开启fsync=always的配置。这反过来将完全破坏与传统上用于以安全的方式实现分布式锁的同一级别的CP系统的性能.</p>
+<p>然而情况总比一开始想象的好一些。当一个redis节点重启后，只要它不参与到任意当前活动的锁，没有被当做“当前存活”节点被客户端重新获取到,算法的安全性仍然是有保障的。</p>
+<p>为了达到这种效果，我们只需要将新的redis实例，在一个TTL时间内，对客户端不可用即可，在这个时间内，所有客户端锁将被失效或者自动释放.</p>
+<p>使用延迟重启可以在不采用持久化策略的情况下达到同样的安全，然而这样做有时会让系统转化为彻底不可用。比如大部分的redis实例都崩溃了，系统在TTL时间内任何锁都将无法加锁成功。</p>
+<h3 id="使算法更加可靠：锁的扩展"><a href="#使算法更加可靠：锁的扩展" class="headerlink" title="使算法更加可靠：锁的扩展"></a>使算法更加可靠：锁的扩展</h3><p>如果你的工作可以拆分为许多小步骤，可以将有效时间设置的小一些，使用锁的一些扩展机制。在工作进行的过程中，当发现锁剩下的有效时间很短时，可以再次向redis的所有实例发送一个Lua脚本，让key的有效时间延长一点（前提还是key存在并且value是之前设置的value)。</p>
+<p>客户端扩展TTL时必须像首次取得锁一样在大多数实例上扩展成功才算再次取到锁，并且是在有效时间内再次取到锁（算法和获取锁是非常相似的）。</p>
+<p>这样做从技术上将并不会改变算法的正确性，所以扩展锁的过程中仍然需要达到获取到N/2+1个实例这个要求，否则活性特性之一就会失效。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/14/transactions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/14/transactions/" itemprop="url">事务</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-14T15:57:34+08:00">
+                2018-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>MULTI 、 EXEC 、 DISCARD 和 WATCH 是 Redis 事务相关的命令。事务可以一次执行多个命令， 并且带有以下两个重要的保证：</p>
+<ul>
+<li>事务是一个单独的隔离操作：事务中的所有命令都会序列化、按顺序地执行。事务在执行的过程中，不会被其他客户端发送来的命令请求所打断。</li>
+<li>事务是一个原子操作：事务中的命令要么全部被执行，要么全部都不执行。</li>
+</ul>
+<p>EXEC 命令负责触发并执行事务中的所有命令：</p>
+<ul>
+<li>如果客户端在使用 MULTI 开启了一个事务之后，却因为断线而没有成功执行 EXEC ，那么事务中的所有命令都不会被执行。</li>
+<li>另一方面，如果客户端成功在开启事务之后执行 EXEC ，那么事务中的所有命令都会被执行。</li>
+</ul>
+<p>当使用 AOF 方式做持久化的时候， Redis 会使用单个 write(2) 命令将事务写入到磁盘中。</p>
+<p>然而，如果 Redis 服务器因为某些原因被管理员杀死，或者遇上某种硬件故障，那么可能只有部分事务命令会被成功写入到磁盘中。</p>
+<p>如果 Redis 在重新启动时发现 AOF 文件出了这样的问题，那么它会退出，并汇报一个错误。</p>
+<p>使用redis-check-aof程序可以修复这一问题：它会移除 AOF 文件中不完整事务的信息，确保服务器可以顺利启动。</p>
+<p>从 2.2 版本开始，Redis 还可以通过乐观锁（optimistic lock）实现 CAS （check-and-set）操作，具体信息请参考文档的后半部分。</p>
+<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>MULTI 命令用于开启一个事务，它总是返回 OK 。 MULTI 执行之后， 客户端可以继续向服务器发送任意多条命令， 这些命令不会立即被执行， 而是被放到一个队列中， 当 EXEC命令被调用时， 所有队列中的命令才会被执行。</p>
+<p>另一方面， 通过调用 DISCARD ， 客户端可以清空事务队列， 并放弃执行事务。</p>
+<p>以下是一个事务例子， 它原子地增加了 foo 和 bar 两个键的值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; MULTI</span><br><span class="line">OK</span><br><span class="line">&gt; INCR foo</span><br><span class="line">QUEUED</span><br><span class="line">&gt; INCR bar</span><br><span class="line">QUEUED</span><br><span class="line">&gt; EXEC</span><br><span class="line">1) (integer) 1</span><br><span class="line">2) (integer) 1</span><br></pre></td></tr></table></figure></p>
+<p>EXEC 命令的回复是一个数组， 数组中的每个元素都是执行事务中的命令所产生的回复。 其中， 回复元素的先后顺序和命令发送的先后顺序一致。</p>
+<p>当客户端处于事务状态时， 所有传入的命令都会返回一个内容为 QUEUED 的状态回复（status reply）， 这些被入队的命令将在 EXEC 命令被调用时执行。</p>
+<h3 id="事务中的错误"><a href="#事务中的错误" class="headerlink" title="事务中的错误"></a>事务中的错误</h3><p>使用事务时可能会遇上以下两种错误：</p>
+<ul>
+<li>事务在执行 EXEC 之前，入队的命令可能会出错。比如说，命令可能会产生语法错误（参数数量错误，参数名错误，等等），或者其他更严重的错误，比如内存不足（如果服务器使用 maxmemory 设置了最大内存限制的话）。</li>
+<li>命令可能在 EXEC 调用之后失败。举个例子，事务中的命令可能处理了错误类型的键，比如将列表命令用在了字符串键上面，诸如此类。</li>
+</ul>
+<p>对于发生在 EXEC 执行之前的错误，客户端以前的做法是检查命令入队所得的返回值：如果命令入队时返回 QUEUED ，那么入队成功；否则，就是入队失败。如果有命令在入队时失败，那么大部分客户端都会停止并取消这个事务。</p>
+<p>不过，从 Redis 2.6.5 开始，服务器会对命令入队失败的情况进行记录，并在客户端调用 EXEC 命令时，拒绝执行并自动放弃这个事务。</p>
+<p>在 Redis 2.6.5 以前， Redis 只执行事务中那些入队成功的命令，而忽略那些入队失败的命令。 而新的处理方式则使得在流水线（pipeline）中包含事务变得简单，因为发送事务和读取事务的回复都只需要和服务器进行一次通讯。</p>
+<p>至于那些在 EXEC 命令执行之后所产生的错误， 并没有对它们进行特别处理： 即使事务中有某个/某些命令在执行时产生了错误， 事务中的其他命令仍然会继续执行。</p>
+<p>从协议的角度来看这个问题，会更容易理解一些。 以下例子中， LPOP 命令的执行将出错， 尽管调用它的语法是正确的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Trying 127.0.0.1...</span><br><span class="line">Connected to localhost.</span><br><span class="line">Escape character is &apos;^]&apos;.</span><br><span class="line">MULTI</span><br><span class="line">+OK</span><br><span class="line">SET a 3</span><br><span class="line">abc</span><br><span class="line">+QUEUED</span><br><span class="line">LPOP a</span><br><span class="line">+QUEUED</span><br><span class="line">EXEC</span><br><span class="line">*2</span><br><span class="line">+OK</span><br><span class="line">-ERR Operation against a key holding the wrong kind of value</span><br></pre></td></tr></table></figure></p>
+<p>EXEC 返回两条bulk-string-reply： 第一条是 OK ，而第二条是 -ERR 。 至于怎样用合适的方法来表示事务中的错误， 则是由客户端自己决定的。</p>
+<p>最重要的是记住这样一条， 即使事务中有某条/某些命令执行失败了， 事务队列中的其他命令仍然会继续执行 —— Redis 不会停止执行事务中的命令。</p>
+<p>以下例子展示的是另一种情况， 当命令在入队时产生错误， 错误会立即被返回给客户端：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MULTI</span><br><span class="line">+OK</span><br><span class="line">INCR a b c</span><br><span class="line">-ERR wrong number of arguments for &apos;incr&apos; command</span><br></pre></td></tr></table></figure>
+<p>因为调用 INCR 命令的参数格式不正确， 所以这个 INCR 命令入队失败。</p>
+<h3 id="为什么-Redis-不支持回滚（roll-back）"><a href="#为什么-Redis-不支持回滚（roll-back）" class="headerlink" title="为什么 Redis 不支持回滚（roll back）"></a>为什么 Redis 不支持回滚（roll back）</h3><p>如果你有使用关系式数据库的经验， 那么 “Redis 在事务失败时不进行回滚，而是继续执行余下的命令”这种做法可能会让你觉得有点奇怪。</p>
+<p>以下是这种做法的优点：</p>
+<ul>
+<li>Redis 命令只会因为错误的语法而失败（并且这些问题不能在入队时发现），或是命令用在了错误类型的键上面：这也就是说，从实用性的角度来说，失败的命令是由编程错误造成的，而这些错误应该在开发的过程中被发现，而不应该出现在生产环境中。</li>
+<li>因为不需要对回滚进行支持，所以 Redis 的内部可以保持简单且快速。</li>
+</ul>
+<p>有种观点认为 Redis 处理事务的做法会产生 bug ， 然而需要注意的是， 在通常情况下， 回滚并不能解决编程错误带来的问题。 举个例子， 如果你本来想通过 INCR 命令将键的值加上 1 ， 却不小心加上了 2 ， 又或者对错误类型的键执行了 INCR ， 回滚是没有办法处理这些情况的。</p>
+<h3 id="放弃事务"><a href="#放弃事务" class="headerlink" title="放弃事务"></a>放弃事务</h3><p>当执行 DISCARD 命令时， 事务会被放弃， 事务队列会被清空， 并且客户端会从事务状态中退出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt; SET foo 1</span><br><span class="line">OK</span><br><span class="line">&gt; MULTI</span><br><span class="line">OK</span><br><span class="line">&gt; INCR foo</span><br><span class="line">QUEUED</span><br><span class="line">&gt; DISCARD</span><br><span class="line">OK</span><br><span class="line">&gt; GET foo</span><br><span class="line">&quot;1&quot;</span><br></pre></td></tr></table></figure></p>
+<h3 id="使用-check-and-set-操作实现乐观锁"><a href="#使用-check-and-set-操作实现乐观锁" class="headerlink" title="使用 check-and-set 操作实现乐观锁"></a>使用 check-and-set 操作实现乐观锁</h3><p>WATCH 命令可以为 Redis 事务提供 check-and-set （CAS）行为。</p>
+<p>被 WATCH 的键会被监视，并会发觉这些键是否被改动过了。 如果有至少一个被监视的键在 EXEC 执行之前被修改了， 那么整个事务都会被取消， EXEC 返回nil-reply来表示事务已经失败。</p>
+<p>举个例子， 假设我们需要原子性地为某个值进行增 1 操作（假设 INCR 不存在）。</p>
+<p>首先我们可能会这样做：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">val = GET mykey</span><br><span class="line">val = val + 1</span><br><span class="line">SET mykey $val</span><br></pre></td></tr></table></figure></p>
+<p>上面的这个实现在只有一个客户端的时候可以执行得很好。 但是， 当多个客户端同时对同一个键进行这样的操作时， 就会产生竞争条件。举个例子， 如果客户端 A 和 B 都读取了键原来的值， 比如 10 ， 那么两个客户端都会将键的值设为 11 ， 但正确的结果应该是 12 才对。</p>
+<p>有了 WATCH ， 我们就可以轻松地解决这类问题了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">WATCH mykey</span><br><span class="line">val = GET mykey</span><br><span class="line">val = val + 1</span><br><span class="line">MULTI</span><br><span class="line">SET mykey $val</span><br><span class="line">EXEC</span><br></pre></td></tr></table></figure></p>
+<p>使用上面的代码， 如果在 WATCH 执行之后， EXEC 执行之前， 有其他客户端修改了 mykey 的值， 那么当前客户端的事务就会失败。 程序需要做的， 就是不断重试这个操作， 直到没有发生碰撞为止。</p>
+<p>这种形式的锁被称作乐观锁， 它是一种非常强大的锁机制。 并且因为大多数情况下， 不同的客户端会访问不同的键， 碰撞的情况一般都很少， 所以通常并不需要进行重试。</p>
+<h3 id="了解-WATCH"><a href="#了解-WATCH" class="headerlink" title="了解 WATCH"></a>了解 WATCH</h3><p>WATCH 使得 EXEC 命令需要有条件地执行： 事务只能在所有被监视键都没有被修改的前提下执行， 如果这个前提不能满足的话，事务就不会被执行。 了解更多-&gt;</p>
+<p>WATCH 命令可以被调用多次。 对键的监视从 WATCH 执行之后开始生效， 直到调用 EXEC 为止。</p>
+<p>用户还可以在单个 WATCH 命令中监视任意多个键， 就像这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; WATCH key1 key2 key3</span><br><span class="line">OK</span><br></pre></td></tr></table></figure></p>
+<p>当 EXEC 被调用时， 不管事务是否成功执行， 对所有键的监视都会被取消。</p>
+<p>另外， 当客户端断开连接时， 该客户端对键的监视也会被取消。</p>
+<p>使用无参数的 UNWATCH 命令可以手动取消对所有键的监视。 对于一些需要改动多个键的事务， 有时候程序需要同时对多个键进行加锁， 然后检查这些键的当前值是否符合程序的要求。 当值达不到要求时， 就可以使用 UNWATCH 命令来取消目前对键的监视， 中途放弃这个事务， 并等待事务的下次尝试。</p>
+<p>使用 WATCH 实现 ZPOP<br>WATCH 可以用于创建 Redis 没有内置的原子操作。举个例子， 以下代码实现了原创的 ZPOP 命令， 它可以原子地弹出有序集合中分值（score）最小的元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">WATCH zset</span><br><span class="line">element = ZRANGE zset 0 0</span><br><span class="line">MULTI</span><br><span class="line">ZREM zset element</span><br><span class="line">EXEC</span><br></pre></td></tr></table></figure></p>
+<p>程序只要重复执行这段代码， 直到 EXEC 的返回值不是nil-reply回复即可。</p>
+<h3 id="Redis-脚本和事务"><a href="#Redis-脚本和事务" class="headerlink" title="Redis 脚本和事务"></a>Redis 脚本和事务</h3><p>从定义上来说， Redis 中的脚本本身就是一种事务， 所以任何在事务里可以完成的事， 在脚本里面也能完成。 并且一般来说， 使用脚本要来得更简单，并且速度更快。</p>
+<p>因为脚本功能是 Redis 2.6 才引入的， 而事务功能则更早之前就存在了， 所以 Redis 才会同时存在两种处理事务的方法。</p>
+<p>不过我们并不打算在短时间内就移除事务功能， 因为事务提供了一种即使不使用脚本， 也可以避免竞争条件的方法， 而且事务本身的实现并不复杂。</p>
+<p>不过在不远的将来， 可能所有用户都会只使用脚本来实现事务也说不定。 如果真的发生这种情况的话， 那么我们将废弃并最终移除事务功能。</p>
+<h3 id="Spring-Boot-例子"><a href="#Spring-Boot-例子" class="headerlink" title="Spring Boot 例子"></a>Spring Boot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 默认测试</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"默认测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">genericTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; keySerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getKeySerializer();</span><br><span class="line"></span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; valueSerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getValueSerializer();</span><br><span class="line"></span><br><span class="line">    List&lt;Object&gt; executeResult = stringRedisTemplate.execute((RedisCallback&lt;List&lt;Object&gt;&gt;) connection -&gt; &#123;</span><br><span class="line">        <span class="comment">// 开启事物</span></span><br><span class="line">        connection.multi();</span><br><span class="line"></span><br><span class="line">        String testKey = String.format(<span class="string">"genericTestKey_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">        <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">        <span class="keyword">byte</span>[] defaultSerializeBytes = valueSerializer.serialize(<span class="string">"1"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span> || defaultSerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"数据异常，无法操作"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 设置默认值：1</span></span><br><span class="line">            connection.set(testKeySerializeBytes, defaultSerializeBytes);</span><br><span class="line">            <span class="comment">// 给testKey incr 1</span></span><br><span class="line">            connection.incr(testKeySerializeBytes);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// 删除testKey</span></span><br><span class="line">            connection.del(testKeySerializeBytes);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 执行事物</span></span><br><span class="line">        <span class="keyword">return</span> connection.exec();</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">if</span> (executeResult == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"执行结果为空，无法操作"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    executeResult.forEach(o -&gt; logger.info(<span class="string">"executeResult:&#123;&#125;"</span>, o));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 放弃事物</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"discard"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">discardTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; keySerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; valueSerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getValueSerializer();</span><br><span class="line"></span><br><span class="line">    stringRedisTemplate.execute((RedisCallback&lt;Object&gt;) connection -&gt; &#123;</span><br><span class="line"></span><br><span class="line">        String testKey = String.format(<span class="string">"genericTestKey_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">        String defaultValue = <span class="string">"1"</span>;</span><br><span class="line">        <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">        <span class="keyword">byte</span>[] defaultSerializeBytes = valueSerializer.serialize(defaultValue);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span> || defaultSerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"数据异常，无法操作"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 设置默认值：1</span></span><br><span class="line">            connection.set(testKeySerializeBytes, defaultSerializeBytes);</span><br><span class="line">            logger.info(<span class="string">"testKey set value is :&#123;&#125;"</span>, defaultValue);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 开启事物</span></span><br><span class="line">            connection.multi();</span><br><span class="line">            logger.info(<span class="string">"multi "</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 给testKey incr 1</span></span><br><span class="line">            connection.incr(testKeySerializeBytes);</span><br><span class="line">            logger.info(<span class="string">"inrc testKey "</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 放弃事物</span></span><br><span class="line">            connection.discard();</span><br><span class="line">            logger.info(<span class="string">"discard"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 重新获得testKey的value</span></span><br><span class="line">            <span class="keyword">byte</span>[] nowTestKeyValueBytes = connection.get(testKeySerializeBytes);</span><br><span class="line">            <span class="keyword">if</span> (nowTestKeyValueBytes == <span class="keyword">null</span> || nowTestKeyValueBytes.length == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"无法获取testKey的value"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            String nowTestKeyValue = <span class="keyword">new</span> String(nowTestKeyValueBytes);</span><br><span class="line">            logger.info(<span class="string">"now testKey value is &#123;&#125;"</span>, nowTestKeyValue);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// 删除testKey</span></span><br><span class="line">            connection.del(testKeySerializeBytes);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 事物 不回滚测试</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"noRollBackTest"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">noRollBackTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; keySerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; valueSerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getValueSerializer();</span><br><span class="line"></span><br><span class="line">    stringRedisTemplate.execute((RedisCallback&lt;Object&gt;) connection -&gt; &#123;</span><br><span class="line"></span><br><span class="line">        String testKey = String.format(<span class="string">"genericTestKey_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">        String defaultValue = <span class="string">"1"</span>;</span><br><span class="line">        <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">        <span class="keyword">byte</span>[] defaultSerializeBytes = valueSerializer.serialize(defaultValue);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span> || defaultSerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"数据异常，无法操作"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 设置默认值：1</span></span><br><span class="line">            connection.set(testKeySerializeBytes, defaultSerializeBytes);</span><br><span class="line">            logger.info(<span class="string">"testKey set value is :&#123;&#125;"</span>, defaultValue);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 开启事物</span></span><br><span class="line">            connection.multi();</span><br><span class="line">            logger.info(<span class="string">"multi "</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 给testKey incr 1</span></span><br><span class="line">            connection.incr(testKeySerializeBytes);</span><br><span class="line">            logger.info(<span class="string">"inrc testKey "</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 错误类型指令</span></span><br><span class="line">            connection.lPop(testKeySerializeBytes);</span><br><span class="line">            logger.info(<span class="string">"lPop testKey"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 给testKey incr 1</span></span><br><span class="line">            connection.incr(testKeySerializeBytes);</span><br><span class="line">            logger.info(<span class="string">"inrc testKey "</span>);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 提交之后虽然后异常，但是两次incr都成功执行了</span></span><br><span class="line">            RedisSystemException redisSystemException = Assertions.assertThrows(RedisSystemException.class, () -&gt; &#123;</span><br><span class="line">                logger.info(<span class="string">"exec"</span>);</span><br><span class="line">                <span class="comment">// 提交</span></span><br><span class="line">                List&lt;Object&gt; execResult = connection.exec();</span><br><span class="line">                execResult.forEach(o -&gt; logger.info(<span class="string">"exec result:&#123;&#125;"</span>, o));</span><br><span class="line">            &#125;);</span><br><span class="line">            logger.error(<span class="string">"错误类型的命令异常"</span>,redisSystemException);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 重新获得testKey的value</span></span><br><span class="line">            <span class="keyword">byte</span>[] nowTestKeyValueBytes = connection.get(testKeySerializeBytes);</span><br><span class="line">            <span class="keyword">if</span> (nowTestKeyValueBytes == <span class="keyword">null</span> || nowTestKeyValueBytes.length == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"无法获取testKey的value"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            String nowTestKeyValue = <span class="keyword">new</span> String(nowTestKeyValueBytes);</span><br><span class="line">            logger.info(<span class="string">"now testKey value is &#123;&#125;"</span>, nowTestKeyValue);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// 删除testKey</span></span><br><span class="line">            connection.del(testKeySerializeBytes);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/14/lru-cache/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/14/lru-cache/" itemprop="url">将redis当做使用LRU算法的缓存来使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-14T15:17:50+08:00">
+                2018-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>当Redis被当做缓存来使用，当你新增数据时，让它自动地回收旧数据是件很方便的事情。这个行为在开发者社区非常有名，因为它是memcached默认行为。</p>
+<p>LRU是Redis唯一支持的回收方法。<br>本页面包括一些常规话题，Redis的maxmemory指令用于将可用内存限制成一个固定大小，还包括了Redis使用的LRU算法，这个实际上只是近似的LRU。</p>
+<h3 id="Maxmemory配置指令"><a href="#Maxmemory配置指令" class="headerlink" title="Maxmemory配置指令"></a>Maxmemory配置指令</h3><p>maxmemory配置指令用于配置Redis存储数据时指定限制的内存大小。通过redis.conf可以设置该指令，或者之后使用CONFIG SET命令来进行运行时配置。</p>
+<p>例如为了配置内存限制为100mb，以下的指令可以放在redis.conf文件中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">maxmemory 100mb</span><br></pre></td></tr></table></figure></p>
+<p>设置maxmemory为0代表没有内存限制。对于64位的系统这是个默认值，对于32位的系统默认内存限制为3GB。</p>
+<p>当指定的内存限制大小达到时，需要选择不同的行为，也就是策略。 Redis可以仅仅对命令返回错误，这将使得内存被使用得更多，或者回收一些旧的数据来使得添加数据时可以避免内存限制。</p>
+<h3 id="回收策略"><a href="#回收策略" class="headerlink" title="回收策略"></a>回收策略</h3><p>当maxmemory限制达到的时候Redis会使用的行为由 Redis的maxmemory-policy配置指令来进行配置。</p>
+<p>以下的策略是可用的:</p>
+<ul>
+<li>noeviction:返回错误当内存限制达到并且客户端尝试执行会让更多内存被使用的命令（大部分的写入指令，但DEL和几个例外）</li>
+<li>allkeys-lru: 尝试回收最少使用的键（LRU），使得新添加的数据有空间存放。</li>
+<li>volatile-lru: 尝试回收最少使用的键（LRU），但仅限于在过期集合的键,使得新添加的数据有空间存放。</li>
+<li>allkeys-random: 回收随机的键使得新添加的数据有空间存放。</li>
+<li>volatile-random: 回收随机的键使得新添加的数据有空间存放，但仅限于在过期集合的键。</li>
+<li>svolatile-ttl: 回收在过期集合的键，并且优先回收存活时间（TTL）较短的键,使得新添加的数据有空间存放。</li>
+</ul>
+<p>如果没有键满足回收的前提条件的话，策略volatile-lru, volatile-random以及volatile-ttl就和noeviction 差不多了。</p>
+<p>选择正确的回收策略是非常重要的，这取决于你的应用的访问模式，不过你可以在运行时进行相关的策略调整，并且监控缓存命中率和没命中的次数，通过RedisINFO命令输出以便调优。</p>
+<p>一般的经验规则:</p>
+<ul>
+<li>使用allkeys-lru策略：当你希望你的请求符合一个幂定律分布，也就是说，你希望部分的子集元素将比其它其它元素被访问的更多。如果你不确定选择什么，这是个很好的选择。.</li>
+<li>使用allkeys-random：如果你是循环访问，所有的键被连续的扫描，或者你希望请求分布正常（所有元素被访问的概率都差不多）。</li>
+<li>使用volatile-ttl：如果你想要通过创建缓存对象时设置TTL值，来决定哪些对象应该被过期。</li>
+</ul>
+<p>allkeys-lru 和 volatile-random策略对于当你想要单一的实例实现缓存及持久化一些键时很有用。不过一般运行两个实例是解决这个问题的更好方法。</p>
+<p>为了键设置过期时间也是需要消耗内存的，所以使用allkeys-lru这种策略更加高效，因为没有必要为键取设置过期时间当内存有压力时。</p>
+<h3 id="回收进程如何工作"><a href="#回收进程如何工作" class="headerlink" title="回收进程如何工作"></a>回收进程如何工作</h3><p>理解回收进程如何工作是非常重要的:</p>
+<ul>
+<li>一个客户端运行了新的命令，添加了新的数据。</li>
+<li>Redi检查内存使用情况，如果大于maxmemory的限制, 则根据设定好的策略进行回收。</li>
+<li>一个新的命令被执行，等等。</li>
+<li>所以我们不断地穿越内存限制的边界，通过不断达到边界然后不断地回收回到边界以下。<br>如果一个命令的结果导致大量内存被使用（例如很大的集合的交集保存到一个新的键），不用多久内存限制就会被这个内存使用量超越。</li>
+</ul>
+<h3 id="近似LRU算法"><a href="#近似LRU算法" class="headerlink" title="近似LRU算法"></a>近似LRU算法</h3><p>Redis的LRU算法并非完整的实现。这意味着Redis并没办法选择最佳候选来进行回收，也就是最久未被访问的键。相反它会尝试运行一个近似LRU的算法，通过对少量keys进行取样，然后回收其中一个最好的key（被访问时间较早的）。</p>
+<p>不过从Redis 3.0算法已经改进为回收键的候选池子。这改善了算法的性能，使得更加近似真是的LRU算法的行为。</p>
+<p>Redis LRU有个很重要的点，你通过调整每次回收时检查的采样数量，以实现调整算法的精度。这个参数可以通过以下的配置指令调整:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">maxmemory-samples 5</span><br></pre></td></tr></table></figure></p>
+<p>在模拟实验的过程中，我们发现如果使用幂定律的访问模式，则真实的LRU算法和近似的Redis算法几乎没有差别。</p>
+<p>当然你可以提升采样大小到10，消耗更多的CPU时间以实现更真实的LRU算法，同时查看下是否让你的缓存命中率有差别。</p>
+<p>通过CONFIG SET maxmemory-samples 命令在生产环境上设置不同的采样大小是非常简单的。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/10/expire/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/10/expire/" itemprop="url">EXPIRE key seconds</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-10T17:54:39+08:00">
+                2018-05-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。</p>
+<p>超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触发删除动作。</p>
+<p>使用PERSIST命令可以清除超时，使其变成一个永久的key。</p>
+<p>如果key被RENAME命令修改，相关的超时时间会转移到新key上面。</p>
+<p>如果key被RENAME命令修改，比如原来就存在Key_A,然后调用RENAME Key_B Key_A命令，这时不管原来Key_A是永久的还是设置为超时的，都会由Key_B的有效期状态覆盖。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 1.0.0</li>
+<li>时间复杂度: O(1)</li>
+<li>返回值： Integers<ul>
+<li>1 如果成功设置过期时间。</li>
+<li>0 如果key不存在或者不能设置过期时间。</li>
+</ul>
+</li>
+</ul>
+<h3 id="刷新过期时间"><a href="#刷新过期时间" class="headerlink" title="刷新过期时间"></a>刷新过期时间</h3><p>对已经有过期时间的key执行EXPIRE操作，将会更新它的过期时间。有很多应用有这种业务场景，例如记录会话的session。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET mykey <span class="string">"Hello"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; EXPIRE mykey 10</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; TTL mykey</span><br><span class="line">(<span class="built_in">integer</span>) 10</span><br><span class="line">redis&gt; SET mykey <span class="string">"Hello World"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; TTL mykey</span><br><span class="line">(<span class="built_in">integer</span>) -1</span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="案例-Navigation-session"><a href="#案例-Navigation-session" class="headerlink" title="案例: Navigation session"></a>案例: Navigation session</h3><p>想象一下，你有一个网络服务器，你对用户最近访问的N个网页感兴趣，每一个相邻的页面设置超时时间为60秒。在概念上你为这些网页添加Navigation session，如果你的用户，可能包含有趣的信息，他或她正在寻找什么样的产品，你可以推荐相关产品。</p>
+<p>你可以使用下面的策略模型，使用这种模式：每次用户浏览网页调用下面的命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MULTI</span><br><span class="line">RPUSH pagewviews.user:&lt;userid&gt; http://.....</span><br><span class="line">EXPIRE pagewviews.user:&lt;userid&gt; 60</span><br><span class="line">EXEC</span><br></pre></td></tr></table></figure></p>
+<h3 id="附录-Redis-过期时间"><a href="#附录-Redis-过期时间" class="headerlink" title="附录: Redis 过期时间"></a>附录: Redis 过期时间</h3><h4 id="Keys的过期时间"><a href="#Keys的过期时间" class="headerlink" title="Keys的过期时间"></a>Keys的过期时间</h4><p>通常Redis keys创建时没有设置相关过期时间。他们会一直存在，除非使用显示的命令移除，例如，使用DEL命令。</p>
+<p>EXPIRE一类命令能关联到一个有额外内存开销的key。当key执行过期操作时，Redis会确保按照规定时间删除他们。</p>
+<p>key的过期时间和永久有效性可以通过EXPIRE和PERSIST命令（或者其他相关命令）来进行更新或者删除过期时间。</p>
+<h4 id="过期精度"><a href="#过期精度" class="headerlink" title="过期精度"></a>过期精度</h4><p>在 Redis 2.4 及以前版本，过期期时间可能不是十分准确，有0-1秒的误差。</p>
+<p>从 Redis 2.6 起，过期时间误差缩小到0-1毫秒。</p>
+<h4 id="过期和持久"><a href="#过期和持久" class="headerlink" title="过期和持久"></a>过期和持久</h4><p>Keys的过期时间使用Unix时间戳存储(从Redis 2.6开始以毫秒为单位)。这意味着即使Redis实例不可用，时间也是一直在流逝的。</p>
+<p>要想过期的工作处理好，计算机必须采用稳定的时间。 如果你将RDB文件在两台时钟不同步的电脑间同步，有趣的事会发生（所有的 keys装载时就会过期）。</p>
+<p>即使正在运行的实例也会检查计算机的时钟，例如如果你设置了一个key的有效期是1000秒，然后设置你的计算机时间为未来2000秒，这时key会立即失效，而不是等1000秒之后。</p>
+<h4 id="Redis如何淘汰过期的keys"><a href="#Redis如何淘汰过期的keys" class="headerlink" title="Redis如何淘汰过期的keys"></a>Redis如何淘汰过期的keys</h4><p>Redis keys过期有两种方式：被动和主动方式。</p>
+<p>当一些客户端尝试访问它时，key会被发现并主动的过期。</p>
+<p>当然，这样是不够的，因为有些过期的keys，永远不会访问他们。 无论如何，这些keys应该过期，所以定时随机测试设置keys的过期时间。所有这些过期的keys将会从密钥空间删除。</p>
+<p>具体就是Redis每秒10次做的事情：</p>
+<ul>
+<li>测试随机的20个keys进行相关过期检测。</li>
+<li>删除所有已经过期的keys。</li>
+<li>如果有多于25%的keys过期，重复步奏1.<br>这是一个平凡的概率算法，基本上的假设是，我们的样本是这个密钥控件，并且我们不断重复过期检测，直到过期的keys的百分百低于25%,这意味着，在任何给定的时刻，最多会清除1/4的过期keys。</li>
+</ul>
+<h4 id="在复制AOF文件时如何处理过期"><a href="#在复制AOF文件时如何处理过期" class="headerlink" title="在复制AOF文件时如何处理过期"></a>在复制AOF文件时如何处理过期</h4><p>为了获得正确的行为而不牺牲一致性，当一个key过期，DEL将会随着AOF文字一起合成到所有附加的slaves。在master实例中，这种方法是集中的，并且不存在一致性错误的机会。</p>
+<p>然而，当slaves连接到master时，不会独立过期keys（会等到master执行DEL命令），他们任然会在数据集里面存在，所以当slave当选为master时淘汰keys会独立执行，然后成为master。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">刘泽航</p>
+              <p class="site-description motion-element" itemprop="description">Redis</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">120</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">刘泽航</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

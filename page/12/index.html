@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Redis">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Redis文档">
+<meta property="og:url" content="http://yoursite.com/page/12/index.html">
+<meta property="og:site_name" content="Redis文档">
+<meta property="og:description" content="Redis">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Redis文档">
+<meta name="twitter:description" content="Redis">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/12/"/>
+
+
+
+
+
+  <title>Redis文档</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Redis文档</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Redis在Java上的使用手册</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/10/memory-optimization/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/10/memory-optimization/" itemprop="url">内存优化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-10T17:02:39+08:00">
+                2018-05-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="小的聚合类型数据的特殊编码处理"><a href="#小的聚合类型数据的特殊编码处理" class="headerlink" title="小的聚合类型数据的特殊编码处理"></a>小的聚合类型数据的特殊编码处理</h3><p>Redis2.2版本及以后，存储集合数据的时候会采用内存压缩技术，以使用更少的内存存储更多的数据。如Hashes,Lists,Sets和Sorted Sets，当这些集合中的所有数都小于一个给定的元素，并且集合中元素数量小于某个值时，存储的数据会被以一种非常节省内存的方式进行编码，使用这种编码理论上至少会节省10倍以上内存（平均节省5倍以上内存）。并且这种编码技术对用户和redis api透明。因为使用这种编码是用CPU换内存，所以我们提供了更改阈值的方法，只需在redis.conf里面进行修改即可.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hash-max-zipmap-entries 64 (2.6以上使用hash-max-ziplist-entries)</span><br><span class="line">hash-max-zipmap-value 512  (2.6以上使用hash-max-ziplist-value)</span><br><span class="line">list-max-ziplist-entries 512</span><br><span class="line">list-max-ziplist-value 64</span><br><span class="line">zset-max-ziplist-entries 128</span><br><span class="line">zset-max-ziplist-value 64</span><br><span class="line">set-max-intset-entries 512</span><br></pre></td></tr></table></figure></p>
+<p>（集合中）如果某个值超过了配置文件中设置的最大值，redis将自动把把它（集合）转换为正常的散列表。这种操作对于比较小的数值是非常快的，但是，如果你为了使用这种编码技术而把配置进行了更改，你最好做一下基准测试（和正常的不采用编码做一下对比）.</p>
+<h3 id="使用32位的redis"><a href="#使用32位的redis" class="headerlink" title="使用32位的redis"></a>使用32位的redis</h3><p>使用32位的redis，对于每一个key,将使用更少的内存，因为32位程序，指针占用的字节数更少。但是32的redis整个实例使用的内存将被限制在4G以下。使用make 32bit命令编译生成32位的redis。RDB和AOF文件是不区分32位和64位的（包括字节顺序）,所以你可以使用64位的reidis恢复32位的RDB备份文件，相反亦然.</p>
+<h3 id="位级别和字级别的操作"><a href="#位级别和字级别的操作" class="headerlink" title="位级别和字级别的操作"></a>位级别和字级别的操作</h3><p>Redis 2.2引入了位级别和字级别的操作: GETRANGE, SETRANGE, GETBIT 和 SETBIT.使用这些命令，你可以把redis的字符串当做一个随机读取的（字节）数组。例如你有一个应用，用来标志用户的ID是连续的整数，你可以使用一个位图标记用户的性别，使用1表示男性，0表示女性，或者其他的方式。这样的话，1亿个用户将仅使用12 M的内存。你可以使用同样的方法，使用 GETRANGE 和 SETRANGE 命令为每个用户存储一个字节的信息。这仅是一个例子，实际上你可以使用这些原始数据类型解决更多问题。</p>
+<h3 id="尽可能使用散列表（hashes）"><a href="#尽可能使用散列表（hashes）" class="headerlink" title="尽可能使用散列表（hashes）"></a>尽可能使用散列表（hashes）</h3><p>小散列表（是说散列表里面存储的数少）使用的内存非常小，所以你应该尽可能的将你的数据模型抽象到一个散列表里面。比如你的web系统中有一个用户对象，不要为这个用户的名称，姓氏，邮箱，密码设置单独的key,而是应该把这个用户的所有信息存储到一张散列表里面.</p>
+<p>如果你想了解更多关于这方面的知识，请读下一段.</p>
+<h3 id="使用散列结构高效存储抽象的键值对"><a href="#使用散列结构高效存储抽象的键值对" class="headerlink" title="使用散列结构高效存储抽象的键值对"></a>使用散列结构高效存储抽象的键值对</h3><p>我知道这部分的标题很吓人，但是我将详细解释这部分内容.</p>
+<p>一般而言，把一个模型（model）表示为key-value的形式存储在redis中非常容易，当然value必须为字符串，这样存储不仅比一般的key value存储高效，并且比memcached存储还高效.</p>
+<p>让我们做个对比：一些key存储了一个对象的多个字段要比一个散列表存储对象的多个字段占用更多的内存。这怎么可能？从原理上讲，为了保证查找一个数据总是在一个常量时间内（O(1)）,需要一个常量时间复杂度的数据结构，比如说散列表.</p>
+<p>但是，通常情况下，散列表只包括极少的几个字段。当散列表非常小的时候，我们采用将数据encode为一个O(N)的数据结构，你可以认为这是一个带有长度属性的线性数组。只有当N是比较小的时候，才会采用这种encode，这样使用HGET和HSET命令的复杂度仍然是O(1)：当散列表包含的元素增长太多的时候，散列表将被转换为正常的散列表（极限值可以在redis.conf进行配置）.</p>
+<p>无论是从时间复杂度还是从常量时间的角度来看，采用这种encode理论上都不会有多大性能提升，但是，一个线性数组通常会被CPU的缓存更好的命中（线性数组有更好的局部性）,从而提升了访问的速度.</p>
+<p>既然散列表的字段及其对应的值并不是用redis objects表示，所以散列表的字段不能像普通的key一样设置过期时间。但是这毫不影响对散列表的使用，因为散列表本来就是这样设计的（我们相信简洁比多功能更重要，所以嵌入对象是不允许的，散列表字段设置单独的过期时间是不允许的）.</p>
+<p>所以散列表能高效利用内存。这非常有用,当你使用一个散列表存储一个对象或者抽象其他一类相关的字段为一个模型时。但是，如果我们有一个普通的key value业务需求怎么办?</p>
+<p>假如我们想使用redis存储许多小对象，这些对象可以使用json字符串表示，也可能是HTML片段和简单的key-&gt;boolean键值对。概况的说，一切皆字符串，都可以使用string:string的形式表示.</p>
+<p>我们假设要缓存的对象使用数字后缀进行编码，如:</p>
+<ul>
+<li>object:102393</li>
+<li>object:1234</li>
+<li>object:5</li>
+</ul>
+<p>我们可以这样做。每次SET的时候，把key分为两部分，第一部分当做一个key，第二部当做散列表字段。比如“object:1234”,分成两部分:</p>
+<ul>
+<li>Key named object:12</li>
+<li>Field named 34<br>我们使用除最后2个数字的部分作为key,最后2个数字做为散列表的字段。使用命令:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HSET object:12 34 somevalue</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如你所见，每个散列表将（理论上）包含100个字段，这是CPU资源和内存资源之间的一个折中.</p>
+<p>另一个需要你关注的是在这种模式下，无论缓存多少对象，每个散列表都会分配100个字段。因为我们的对象总是以数字结尾，而不是一个随机的字符串。从某些方面来说，这是一种隐性的预分片。</p>
+<p>对于小数字怎么处理？比如object:2,我们采用object:作为key,所有剩下的数字作为一个字段。所以object:2和object:10都会被存储到key为object:的散列表中，但是一个使用2作为字段，一个使用10作为字段。</p>
+<p>这种方式将节省多少内存?</p>
+<p>我使用了下面的Ruby程序进行了测试:<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span> <span class="string">'rubygems'</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">'redis'</span></span><br><span class="line"></span><br><span class="line">UseOptimization = <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hash_get_key_field</span><span class="params">(key)</span></span></span><br><span class="line">    s = key.split(<span class="string">":"</span>)</span><br><span class="line">    <span class="keyword">if</span> s[<span class="number">1</span>].length &gt; <span class="number">2</span></span><br><span class="line">        &#123;<span class="symbol">:key</span> =&gt; s[<span class="number">0</span>]+<span class="string">":"</span>+s[<span class="number">1</span>][<span class="number">0</span>..-<span class="number">3</span>], <span class="symbol">:field</span> =&gt; s[<span class="number">1</span>][-<span class="number">2</span>..-<span class="number">1</span>]&#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        &#123;<span class="symbol">:key</span> =&gt; s[<span class="number">0</span>]+<span class="string">":"</span>, <span class="symbol">:field</span> =&gt; s[<span class="number">1</span>]&#125;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hash_set</span><span class="params">(r,key,value)</span></span></span><br><span class="line">    kf = hash_get_key_field(key)</span><br><span class="line">    r.hset(kf[<span class="symbol">:key</span>],kf[<span class="symbol">:field</span>],value)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hash_get</span><span class="params">(r,key,value)</span></span></span><br><span class="line">    kf = hash_get_key_field(key)</span><br><span class="line">    r.hget(kf[<span class="symbol">:key</span>],kf[<span class="symbol">:field</span>],value)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">r = Redis.new</span><br><span class="line">(<span class="number">0</span>..<span class="number">100000</span>).each&#123;<span class="params">|id|</span></span><br><span class="line">    key = <span class="string">"object:<span class="subst">#&#123;id&#125;</span>"</span></span><br><span class="line">    <span class="keyword">if</span> UseOptimization</span><br><span class="line">        hash_set(r,key,<span class="string">"val"</span>)</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        r.set(key,<span class="string">"val"</span>)</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在redis2.2的64位版本上测试结果:</p>
+<ul>
+<li>当开启优化时使用内存1.7M</li>
+<li>当未开启优化时使用内存11M<br>从结果看出，这是一个数量级的优化，我认为这种优化使redis成为最出色的键值缓存。</li>
+</ul>
+<p>特别提示: 要使上面的程序较好的工作，别忘记设置你的redis:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hash-max-zipmap-entries 256</span><br></pre></td></tr></table></figure></p>
+<p>相应的最大键值长度设置:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hash-max-zipmap-value 1024</span><br></pre></td></tr></table></figure></p>
+<p>每次散列表的元素数量或者值超过了阈值，散列将被扩展为一张真正的散列表进行存储，此时节约存储的优势就没有了.</p>
+<p>或许你想问，你为什么不自动将这些key进行转化以提高内存利用率？有两个原因：第一是因为我们更倾向于让这些权衡明确，而且必须在很多事情之间权衡：CPU，内存，最大元素大小限制。第二是顶级的键空间支持很多有趣的特性，比如过期，LRU算法，所以这种做法并不是一种通用的方法.</p>
+<p>Redis的一贯风格是用户必须理解它是如何运作的，必须能够做出最好的选择和权衡，并且清楚它精确的运行方式.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/eval/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/09/eval/" itemprop="url">Lua脚本</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-09T14:40:42+08:00">
+                2018-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="EVAL-script-numkeys-key-key-…-arg-arg-…"><a href="#EVAL-script-numkeys-key-key-…-arg-arg-…" class="headerlink" title="EVAL script numkeys key [key …] arg [arg …]"></a>EVAL script numkeys key [key …] arg [arg …]</h3><h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>EVAL 和 EVALSHA 命令是从 Redis 2.6.0 版本开始的，使用内置的 Lua 解释器，可以对 Lua 脚本进行求值。</p>
+<p>EVAL的第一个参数是一段 Lua 5.1 脚本程序。 这段Lua脚本不需要（也不应该）定义函数。它运行在 Redis 服务器中。</p>
+<p>EVAL的第二个参数是参数的个数，后面的参数（从第三个参数），表示在脚本中所用到的那些 Redis 键(key)，这些键名参数可以在 Lua 中通过全局变量 KEYS 数组，用 1 为基址的形式访问( KEYS[1] ， KEYS[2] ，以此类推)。</p>
+<p>在命令的最后，那些不是键名参数的附加参数 arg [arg …] ，可以在 Lua 中通过全局变量 ARGV 数组访问，访问的形式和 KEYS 变量类似( ARGV[1] 、 ARGV[2] ，诸如此类)。</p>
+<p>举例说明：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; eval &quot;return &#123;KEYS[1],KEYS[2],ARGV[1],ARGV[2]&#125;&quot; 2 key1 key2 first second</span><br><span class="line">1) &quot;key1&quot;</span><br><span class="line">2) &quot;key2&quot;</span><br><span class="line">3) &quot;first&quot;</span><br><span class="line">4) &quot;second&quot;</span><br></pre></td></tr></table></figure></p>
+<p>注：返回结果是Redis multi bulk replies的Lua数组，这是一个Redis的返回类型，您的客户端库可能会将他们转换成数组类型。</p>
+<p>这是从一个Lua脚本中使用两个不同的Lua函数来调用Redis的命令的例子：<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">redis.call()</span><br><span class="line">redis.<span class="built_in">pcall</span>()</span><br></pre></td></tr></table></figure></p>
+<p>redis.call() 与 redis.pcall()很类似, 他们唯一的区别是当redis命令执行结果返回错误时， redis.call()将返回给调用者一个错误，而redis.pcall()会将捕获的错误以Lua表的形式返回</p>
+<p>redis.call() 和 redis.pcall() 两个函数的参数可以是任意的 Redis 命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return redis.call('set','foo','bar')"</span> 0</span><br><span class="line">OK</span><br></pre></td></tr></table></figure></p>
+<p>需要注意的是，上面这段脚本的确实现了将键 foo 的值设为 bar 的目的，但是，它违反了 EVAL 命令的语义，因为脚本里使用的所有键都应该由 KEYS 数组来传递，就像这样：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return redis.call('set',KEYS[1],'bar')"</span> 1 foo</span><br><span class="line">OK</span><br></pre></td></tr></table></figure></p>
+<p>要求使用正确的形式来传递键(key)是有原因的，因为不仅仅是 EVAL 这个命令，所有的 Redis 命令，在执行之前都会被分析，籍此来确定命令会对哪些键进行操作。</p>
+<p>因此，对于 EVAL 命令来说，必须使用正确的形式来传递键，才能确保分析工作正确地执行。 除此之外，使用正确的形式来传递键还有很多其他好处，它的一个特别重要的用途就是确保 Redis 集群可以将你的请求发送到正确的集群节点。 (对 Redis 集群的工作还在进行当中，但是脚本功能被设计成可以与集群功能保持兼容。)不过，这条规矩并不是强制性的， 从而使得用户有机会滥用(abuse) Redis 单实例配置(single instance configuration)，代价是这样写出的脚本不能被 Redis 集群所兼容。</p>
+<p>Lua 脚本能返回一个值，这个值能按照一组转换规则从Lua转换成redis的返回类型。</p>
+<h3 id="Lua-数据类型和-Redis-数据类型之间转换"><a href="#Lua-数据类型和-Redis-数据类型之间转换" class="headerlink" title="Lua 数据类型和 Redis 数据类型之间转换"></a>Lua 数据类型和 Redis 数据类型之间转换</h3><p>当 Lua 通过 call() 或 pcall() 函数执行 Redis 命令的时候，命令的返回值会被转换成 Lua 数据结构。 同样地，当 Lua 脚本在 Redis 内置的解释器里运行时，Lua 脚本的返回值也会被转换成 Redis 协议(protocol)，然后由 EVAL 将值返回给客户端。</p>
+<p>数据类型之间的转换遵循这样一个设计原则：如果将一个 Redis 值转换成 Lua 值，之后再将转换所得的 Lua 值转换回 Redis 值，那么这个转换所得的 Redis 值应该和最初时的 Redis 值一样。</p>
+<p>换句话说， Lua 类型和 Redis 类型之间存在着一一对应的转换关系。</p>
+<h4 id="Redis-到-Lua-的转换表。"><a href="#Redis-到-Lua-的转换表。" class="headerlink" title="Redis 到 Lua 的转换表。"></a>Redis 到 Lua 的转换表。</h4><ul>
+<li>Redis integer reply -&gt; Lua number / Redis 整数转换成 Lua 数字</li>
+<li>Redis bulk reply -&gt; Lua string / Redis bulk 回复转换成 Lua 字符串</li>
+<li>Redis multi bulk reply -&gt; Lua table (may have other Redis data types nested) / Redis 多条 bulk 回复转换成 Lua 表，表内可能有其他别的 Redis 数据类型</li>
+<li>Redis status reply -&gt; Lua table with a single ok field containing the status / Redis 状态回复转换成 Lua 表，表内的 ok 域包含了状态信息</li>
+<li>Redis error reply -&gt; Lua table with a single err field containing the error / Redis 错误回复转换成 Lua 表，表内的 err 域包含了错误信息</li>
+<li>Redis Nil bulk reply and Nil multi bulk reply -&gt; Lua false boolean type / Redis 的 Nil 回复和 Nil 多条回复转换成 Lua 的布尔值 false</li>
+</ul>
+<h4 id="Lua-到-Redis-的转换表。"><a href="#Lua-到-Redis-的转换表。" class="headerlink" title="Lua 到 Redis 的转换表。"></a>Lua 到 Redis 的转换表。</h4><ul>
+<li>Lua number -&gt; Redis integer reply (the number is converted into an integer) / Lua 数字转换成 Redis 整数</li>
+<li>Lua string -&gt; Redis bulk reply / Lua 字符串转换成 Redis bulk 回复</li>
+<li>Lua table (array) -&gt; Redis multi bulk reply (truncated to the first nil inside the Lua array if any) / Lua 表(数组)转换成 Redis 多条 bulk 回复</li>
+<li>Lua table with a single ok field -&gt; Redis status reply / 一个带单个 ok 域的 Lua 表，转换成 Redis 状态回复</li>
+<li>Lua table with a single err field -&gt; Redis error reply / 一个带单个 err 域的 Lua 表，转换成 Redis 错误回复</li>
+<li>Lua boolean false -&gt; Redis Nil bulk reply. / Lua 的布尔值 false 转换成 Redis 的 Nil bulk 回复<br>从 Lua 转换到 Redis 有一条额外的规则，这条规则没有和它对应的从 Redis 转换到 Lua 的规则：</li>
+<li>Lua boolean true -&gt; Redis integer reply with value of 1. / Lua 布尔值 true 转换成 Redis 整数回复中的 1</li>
+</ul>
+<p>还有下面两点需要重点注意：</p>
+<ul>
+<li>lua中整数和浮点数之间没有什么区别。因此，我们始终Lua的数字转换成整数的回复，这样将舍去小数部分。如果你想从Lua返回一个浮点数，你应该将它作为一个字符串（见比如ZSCORE命令）。</li>
+<li>There is no simple way to have nils inside Lua arrays, this is a result of Lua table semantics, so when Redis converts a Lua array into Redis protocol the conversion is stopped if a nil is encountered.</li>
+</ul>
+<p>以下是几个类型转换的例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return 10"</span> 0</span><br><span class="line">(<span class="built_in">integer</span>) 10</span><br><span class="line"></span><br><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return &#123;1,2,&#123;3,'Hello World!'&#125;&#125;"</span> 0</span><br><span class="line">1) (<span class="built_in">integer</span>) 1</span><br><span class="line">2) (<span class="built_in">integer</span>) 2</span><br><span class="line">3) 1) (<span class="built_in">integer</span>) 3</span><br><span class="line">   2) <span class="string">"Hello World!"</span></span><br><span class="line"></span><br><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return redis.call('get','foo')"</span> 0</span><br><span class="line"><span class="string">"bar"</span></span><br></pre></td></tr></table></figure></p>
+<p>最后一个例子展示如果是Lua直接命令调用它是如何可以从redis.call()或redis.pcall()接收到准确的返回值。</p>
+<p>下面的例子我们可以看到浮点数和nil将怎么样处理：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return &#123;1,2,3.3333,'foo',nil,'bar'&#125;"</span> 0</span><br><span class="line">1) (<span class="built_in">integer</span>) 1</span><br><span class="line">2) (<span class="built_in">integer</span>) 2</span><br><span class="line">3) (<span class="built_in">integer</span>) 3</span><br><span class="line">4) <span class="string">"foo"</span></span><br></pre></td></tr></table></figure></p>
+<p>正如你看到的 3.333 被转换成了3，并且 nil后面的字符串bar没有被返回回来。</p>
+<h3 id="返回redis类型的辅助函数"><a href="#返回redis类型的辅助函数" class="headerlink" title="返回redis类型的辅助函数"></a>返回redis类型的辅助函数</h3><p>有两个辅助函数从Lua返回Redis的类型。</p>
+<ul>
+<li>redis.error_reply(error_string) returns an error reply. This function simply returns the single field table with the err field set to the specified string for you.</li>
+<li>redis.status_reply(status_string) returns a status reply. This function simply returns the single field table with the ok field set to the specified string for you.</li>
+</ul>
+<p>There is no difference between using the helper functions or directly returning the table with the specified format, so the following two forms are equivalent:</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> &#123;err=<span class="string">"My Error"</span>&#125;</span><br><span class="line"><span class="keyword">return</span> redis.error_reply(<span class="string">"My Error"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="脚本的原子性"><a href="#脚本的原子性" class="headerlink" title="脚本的原子性"></a>脚本的原子性</h3><p>Redis 使用单个 Lua 解释器去运行所有脚本，并且， Redis 也保证脚本会以原子性(atomic)的方式执行： 当某个脚本正在运行的时候，不会有其他脚本或 Redis 命令被执行。 这和使用 MULTI / EXEC 包围的事务很类似。 在其他别的客户端看来，脚本的效果(effect)要么是不可见的(not visible)，要么就是已完成的(already completed)。 另一方面，这也意味着，执行一个运行缓慢的脚本并不是一个好主意。写一个跑得很快很顺溜的脚本并不难， 因为脚本的运行开销(overhead)非常少，但是当你不得不使用一些跑得比较慢的脚本时，请小心， 因为当这些蜗牛脚本在慢吞吞地运行的时候，其他客户端会因为服务器正忙而无法执行命令。</p>
+<h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3><p>前面的命令介绍部分说过， redis.call() 和 redis.pcall() 的唯一区别在于它们对错误处理的不同。</p>
+<p>当 redis.call() 在执行命令的过程中发生错误时，脚本会停止执行，并返回一个脚本错误，错误的输出信息会说明错误造成的原因：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; del foo</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">&gt; lpush foo a</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return redis.call('get','foo')"</span> 0</span><br><span class="line">(error) ERR Error running script (call to f_6b1bf486c81ceb7edf3c093f4c48582e38c0e791): ERR Operation against a key holding the wrong kind of value</span><br></pre></td></tr></table></figure></p>
+<p>和 redis.call() 不同， redis.pcall() 出错时并不引发(raise)错误，而是返回一个带 err 域的 Lua 表(table)，用于表示错误：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">redis 127.0.0.1:6379&gt; EVAL <span class="string">"return redis.pcall('get', 'foo')"</span> 0</span><br><span class="line">(error) ERR Operation against a key holding the wrong kind of value</span><br></pre></td></tr></table></figure></p>
+<h3 id="带宽和-EVALSHA"><a href="#带宽和-EVALSHA" class="headerlink" title="带宽和 EVALSHA"></a>带宽和 EVALSHA</h3><p>EVAL 命令要求你在每次执行脚本的时候都发送一次脚本主体(script body)。Redis 有一个内部的缓存机制，因此它不会每次都重新编译脚本，不过在很多场合，付出无谓的带宽来传送脚本主体并不是最佳选择。</p>
+<p>为了减少带宽的消耗， Redis 实现了 EVALSHA 命令，它的作用和 EVAL 一样，都用于对脚本求值，但它接受的第一个参数不是脚本，而是脚本的 SHA1 校验和(sum)。</p>
+<p>EVALSHA 命令的表现如下：</p>
+<p>如果服务器还记得给定的 SHA1 校验和所指定的脚本，那么执行这个脚本 如果服务器不记得给定的 SHA1 校验和所指定的脚本，那么它返回一个特殊的错误，提醒用户使用 EVAL 代替 EVALSHA 以下是示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="built_in">set</span> foo bar</span><br><span class="line">OK</span><br><span class="line"></span><br><span class="line">&gt; <span class="built_in">eval</span> <span class="string">"return redis.call('get','foo')"</span> 0</span><br><span class="line"><span class="string">"bar"</span></span><br><span class="line"></span><br><span class="line">&gt; evalsha 6b1bf486c81ceb7edf3c093f4c48582e38c0e791 0</span><br><span class="line"><span class="string">"bar"</span></span><br><span class="line"></span><br><span class="line">&gt; evalsha ffffffffffffffffffffffffffffffffffffffff 0</span><br><span class="line">(error) `NOSCRIPT` No matching script. Please use [EVAL](/commands/<span class="built_in">eval</span>).</span><br></pre></td></tr></table></figure></p>
+<p>客户端库的底层实现可以一直乐观地使用 EVALSHA 来代替 EVAL ，并期望着要使用的脚本已经保存在服务器上了，只有当 NOSCRIPT 错误发生时，才使用 EVAL 命令重新发送脚本，这样就可以最大限度地节省带宽。</p>
+<p>这也说明了执行 EVAL 命令时，使用正确的格式来传递键名参数和附加参数的重要性：因为如果将参数硬写在脚本中，那么每次当参数改变的时候，都要重新发送脚本，即使脚本的主体并没有改变，相反，通过使用正确的格式来传递键名参数和附加参数，就可以在脚本主体不变的情况下，直接使用 EVALSHA 命令对脚本进行复用，免去了无谓的带宽消耗</p>
+<h3 id="脚本缓存"><a href="#脚本缓存" class="headerlink" title="脚本缓存"></a>脚本缓存</h3><p>Redis 保证所有被运行过的脚本都会被永久保存在脚本缓存当中，这意味着，当 EVAL 命令在一个 Redis 实例上成功执行某个脚本之后，随后针对这个脚本的所有 EVALSHA 命令都会成功执行。</p>
+<p>刷新脚本缓存的唯一办法是显式地调用 SCRIPT FLUSH 命令，这个命令会清空运行过的所有脚本的缓存。通常只有在云计算环境中，Redis 实例被改作其他客户或者别的应用程序的实例时，才会执行这个命令。</p>
+<p>缓存可以长时间储存而不产生内存问题的原因是，它们的体积非常小，而且数量也非常少，即使脚本在概念上类似于实现一个新命令，即使在一个大规模的程序里有成百上千的脚本，即使这些脚本会经常修改，即便如此，储存这些脚本的内存仍然是微不足道的。</p>
+<p>事实上，用户会发现 Redis 不移除缓存中的脚本实际上是一个好主意。比如说，对于一个和 Redis 保持持久化链接(persistent connection)的程序来说，它可以确信，执行过一次的脚本会一直保留在内存当中，因此它可以在流水线中使用 EVALSHA 命令而不必担心因为找不到所需的脚本而产生错误(稍候我们会看到在流水线中执行脚本的相关问题)。</p>
+<h3 id="SCRIPT-命令"><a href="#SCRIPT-命令" class="headerlink" title="SCRIPT 命令"></a>SCRIPT 命令</h3><p>Redis 提供了以下几个 SCRIPT 命令，用于对脚本子系统(scripting subsystem)进行控制：</p>
+<ul>
+<li>SCRIPT FLUSH ：清除所有脚本缓存 </li>
+<li>SCRIPT EXISTS ：根据给定的脚本校验和，检查指定的脚本是否存在于脚本缓存 </li>
+<li>SCRIPT LOAD ：将一个脚本装入脚本缓存，但并不立即运行它 </li>
+<li>SCRIPT KILL ：杀死当前正在运行的脚本</li>
+</ul>
+<h3 id="纯函数脚本"><a href="#纯函数脚本" class="headerlink" title="纯函数脚本"></a>纯函数脚本</h3><p>在编写脚本方面，一个重要的要求就是，脚本应该被写成纯函数(pure function)。</p>
+<p>也就是说，脚本应该具有以下属性：</p>
+<ul>
+<li>对于同样的数据集输入，给定相同的参数，脚本执行的 Redis 写命令总是相同的。脚本执行的操作不能依赖于任何隐藏(非显式)数据，不能依赖于脚本在执行过程中、或脚本在不同执行时期之间可能变更的状态，并且它也不能依赖于任何来自 I/O 设备的外部输入。</li>
+</ul>
+<p>使用系统时间(system time)，调用像 RANDOMKEY 那样的随机命令，或者使用 Lua 的随机数生成器，类似以上的这些操作，都会造成脚本的求值无法每次都得出同样的结果。</p>
+<p>为了确保脚本符合上面所说的属性， Redis 做了以下工作：</p>
+<ul>
+<li>Lua 没有访问系统时间或者其他内部状态的命令</li>
+<li>Redis 会返回一个错误，阻止这样的脚本运行： 这些脚本在执行随机命令之后(比如 RANDOMKEY 、 SRANDMEMBER 或 TIME 等)，还会执行可以修改数据集的 Redis 命令。如果脚本只是执行只读操作，那么就没有这一限制。注意，随机命令并不一定就指那些带 RAND 字眼的命令，任何带有非确定性的命令都会被认为是随机命令，比如 TIME 命令就是这方面的一个很好的例子。</li>
+<li>每当从 Lua 脚本中调用那些返回无序元素的命令时，执行命令所得的数据在返回给 Lua 之前会先执行一个静默(slient)的字典序排序(lexicographical sorting)。举个例子，因为 Redis 的 Set 保存的是无序的元素，所以在 Redis 命令行客户端中直接执行 SMEMBERS ，返回的元素是无序的，但是，假如在脚本中执行 redis.call(“smembers”, KEYS[1]) ，那么返回的总是排过序的元素。</li>
+<li>对 Lua 的伪随机数生成函数 math.random 和 math.randomseed 进行修改，使得每次在运行新脚本的时候，总是拥有同样的 seed 值。这意味着，每次运行脚本时，只要不使用 math.randomseed ，那么 math.random 产生的随机数序列总是相同的。<br>尽管有那么多的限制，但用户还是可以用一个简单的技巧写出带随机行为的脚本(如果他们需要的话)。</li>
+</ul>
+<p>假设现在我们要编写一个 Redis 脚本，这个脚本从列表中弹出 N 个随机数。一个 Ruby 写的例子如下：<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span> <span class="string">'rubygems'</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">'redis'</span></span><br><span class="line"></span><br><span class="line">r = Redis.new</span><br><span class="line"></span><br><span class="line">RandomPushScript = <span class="string">&lt;&lt;EOF</span></span><br><span class="line"><span class="string">    local i = tonumber(ARGV[1])</span></span><br><span class="line"><span class="string">    local res</span></span><br><span class="line"><span class="string">    while (i &gt; 0) do</span></span><br><span class="line"><span class="string">        res = redis.call('lpush',KEYS[1],math.random())</span></span><br><span class="line"><span class="string">        i = i-1</span></span><br><span class="line"><span class="string">    end</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">r.del(<span class="symbol">:mylist</span>)</span><br><span class="line">puts r.eval(RandomPushScript,[<span class="symbol">:mylist</span>],[<span class="number">10</span>,rand(<span class="number">2</span>**<span class="number">32</span>)])</span><br></pre></td></tr></table></figure></p>
+<p>这个程序每次运行都会生成带有以下元素的列表：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; lrange mylist 0 -1</span><br><span class="line">1) <span class="string">"0.74509509873814"</span></span><br><span class="line">2) <span class="string">"0.87390407681181"</span></span><br><span class="line">3) <span class="string">"0.36876626981831"</span></span><br><span class="line">4) <span class="string">"0.6921941534114"</span></span><br><span class="line">5) <span class="string">"0.7857992587545"</span></span><br><span class="line">6) <span class="string">"0.57730350670279"</span></span><br><span class="line">7) <span class="string">"0.87046522734243"</span></span><br><span class="line">8) <span class="string">"0.09637165539729"</span></span><br><span class="line">9) <span class="string">"0.74990198051087"</span></span><br><span class="line">10) <span class="string">"0.17082803611217"</span></span><br></pre></td></tr></table></figure></p>
+<p>上面的 Ruby 程序每次都只生成同样的列表，用途并不是太大。那么，该怎样修改这个脚本，使得它仍然是一个纯函数(符合 Redis 的要求)，但是每次调用都可以产生不同的随机元素呢？<br>一个简单的办法是，为脚本添加一个额外的参数，让这个参数作为 Lua 的随机数生成器的 seed 值，这样的话，只要给脚本传入不同的 seed ，脚本就会生成不同的列表元素。</p>
+<p>以下是修改后的脚本：<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">RandomPushScript = <span class="string">&lt;&lt;EOF</span></span><br><span class="line"><span class="string">    local i = tonumber(ARGV[1])</span></span><br><span class="line"><span class="string">    local res</span></span><br><span class="line"><span class="string">    math.randomseed(tonumber(ARGV[2]))</span></span><br><span class="line"><span class="string">    while (i &gt; 0) do</span></span><br><span class="line"><span class="string">        res = redis.call('lpush',KEYS[1],math.random())</span></span><br><span class="line"><span class="string">        i = i-1</span></span><br><span class="line"><span class="string">    end</span></span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">r.del(<span class="symbol">:mylist</span>)</span><br><span class="line">puts r.eval(RandomPushScript,<span class="number">1</span>,<span class="symbol">:mylist</span>,<span class="number">10</span>,rand(<span class="number">2</span>**<span class="number">32</span>))</span><br></pre></td></tr></table></figure></p>
+<p>尽管对于同样的 seed ，上面的脚本产生的列表元素是一样的(因为它是一个纯函数)，但是只要每次在执行脚本的时候传入不同的 seed ，我们就可以得到带有不同随机元素的列表。</p>
+<p>Seed 会在复制(replication link)和写 AOF 文件时作为一个参数来传播，保证在载入 AOF 文件或附属节点(slave)处理脚本时， seed 仍然可以及时得到更新。</p>
+<p>注意，Redis 实现保证 math.random 和 math.randomseed 的输出和运行 Redis 的系统架构无关，无论是 32 位还是 64 位系统，无论是小端(little endian)还是大端(big endian)系统，这两个函数的输出总是相同的。</p>
+<h3 id="全局变量保护"><a href="#全局变量保护" class="headerlink" title="全局变量保护"></a>全局变量保护</h3><p>为了防止不必要的数据泄漏进 Lua 环境， Redis 脚本不允许创建全局变量。如果一个脚本需要在多次执行之间维持某种状态，它应该使用 Redis key 来进行状态保存。</p>
+<p>企图在脚本中访问一个全局变量(不论这个变量是否存在)将引起脚本停止， EVAL 命令会返回一个错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">redis 127.0.0.1:6379&gt; eval &apos;a=10&apos; 0</span><br><span class="line">(error) ERR Error running script (call to f_933044db579a2f8fd45d8065f04a8d0249383e57): user_script:1: Script attempted to create global variable &apos;a&apos;</span><br></pre></td></tr></table></figure></p>
+<p>Lua 的 debug 工具，或者其他设施，比如打印（alter）用于实现全局保护的 meta table ，都可以用于实现全局变量保护。</p>
+<p>实现全局变量保护并不难，不过有时候还是会不小心而为之。一旦用户在脚本中混入了 Lua 全局状态，那么 AOF 持久化和复制（replication）都会无法保证，所以，请不要使用全局变量。</p>
+<p>避免引入全局变量的一个诀窍是：将脚本中用到的所有变量都使用 local 关键字定义为局部变量。</p>
+<h3 id="使用选择内部脚本"><a href="#使用选择内部脚本" class="headerlink" title="使用选择内部脚本"></a>使用选择内部脚本</h3><p>在正常的客户端连接里面可以调用SELECT选择内部的Lua脚本，但是Redis 2.8.11和Redis 2.8.12在行为上有一个微妙的变化。在2.8.12之前，会将脚本传送到调用脚本的当前数据库。从2.8.12开始Lua脚本只影响脚本本身的执行，但不修改当前客户端调用脚本时选定的数据库。</p>
+<p>从补丁级发布的语义变化是必要的，因为旧的行为与Redis复制层固有的不相容是错误的原因。</p>
+<h3 id="可用库"><a href="#可用库" class="headerlink" title="可用库"></a>可用库</h3><p>Redis Lua解释器可用加载以下Lua库：</p>
+<ul>
+<li>base lib.</li>
+<li>table lib.</li>
+<li>string lib.</li>
+<li>math lib.</li>
+<li>debug lib.</li>
+<li>struct lib.</li>
+<li>cjson lib.</li>
+<li>cmsgpack lib.</li>
+<li>bitop lib.</li>
+<li>redis.sha1hex function.</li>
+</ul>
+<p>每一个Redis实例都拥有以上的所有类库，以确保您使用脚本的环境都是一样的。</p>
+<p>struct, CJSON 和 cmsgpack 都是外部库, 所有其他库都是标准。 Lua库。</p>
+<p>struct 库<br>struct 是一个Lua装箱/拆箱的库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Valid formats:</span><br><span class="line">&gt; - big endian</span><br><span class="line">&lt; - little endian</span><br><span class="line">![num] - alignment</span><br><span class="line">x - pading</span><br><span class="line">b/B - signed/unsigned byte</span><br><span class="line">h/H - signed/unsigned short</span><br><span class="line">l/L - signed/unsigned long</span><br><span class="line">T   - size_t</span><br><span class="line">i/In - signed/unsigned integer with size `n&apos; (default is size of int)</span><br><span class="line">cn - sequence of `n&apos; chars (from/to a string); when packing, n==0 means</span><br><span class="line">     the whole string; when unpacking, n==0 means use the previous</span><br><span class="line">     read number as the string length</span><br><span class="line">s - zero-terminated string</span><br><span class="line">f - float</span><br><span class="line">d - double</span><br><span class="line">&apos; &apos; - ignored</span><br></pre></td></tr></table></figure></p>
+<p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return struct.pack("HH", 1, 2)'</span> 0</span><br><span class="line"><span class="string">"\x01\x00\x02\x00"</span></span><br><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return &#123;struct.unpack("HH", ARGV[1])&#125;'</span> 0 <span class="string">"\x01\x00\x02\x00"</span></span><br><span class="line">1) (<span class="built_in">integer</span>) 1</span><br><span class="line">2) (<span class="built_in">integer</span>) 2</span><br><span class="line">3) (<span class="built_in">integer</span>) 5</span><br><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return struct.size("HH")'</span> 0</span><br><span class="line">(<span class="built_in">integer</span>) 4</span><br></pre></td></tr></table></figure></p>
+<h3 id="CJSON-库"><a href="#CJSON-库" class="headerlink" title="CJSON 库"></a>CJSON 库</h3><p>CJSON 库为Lua提供极快的JSON处理</p>
+<p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">redis 127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return cjson.encode(&#123;["foo"]= "bar"&#125;)'</span> 0</span><br><span class="line"><span class="string">"&#123;\"foo\":\"bar\"&#125;"</span></span><br><span class="line">redis 127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return cjson.decode(ARGV[1])["foo"]'</span> 0 <span class="string">"&#123;\"foo\":\"bar\"&#125;"</span></span><br><span class="line"><span class="string">"bar"</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="cmsgpack-库"><a href="#cmsgpack-库" class="headerlink" title="cmsgpack 库"></a>cmsgpack 库</h3><p>cmsgpack 库为Lua提供了简单、快速的MessagePack操纵</p>
+<p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return cmsgpack.pack(&#123;"foo", "bar", "baz"&#125;)'</span> 0</span><br><span class="line"><span class="string">"\x93\xa3foo\xa3bar\xa3baz"</span></span><br><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return cmsgpack.unpack(ARGV[1])'</span> 0 <span class="string">"\x93\xa3foo\xa3bar\xa3baz"</span></span><br><span class="line">1) <span class="string">"foo"</span></span><br><span class="line">2) <span class="string">"bar"</span></span><br><span class="line">3) <span class="string">"baz"</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="bitop-库"><a href="#bitop-库" class="headerlink" title="bitop 库"></a>bitop 库</h3><p>bitop库为Lua的位运算模块增加了按位操作数。 它是Redis 2.8.18开始加入的。</p>
+<p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return bit.tobit(1)'</span> 0</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return bit.bor(1,2,4,8,16,32,64,128)'</span> 0</span><br><span class="line">(<span class="built_in">integer</span>) 255</span><br><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return bit.tohex(422342)'</span> 0</span><br><span class="line"><span class="string">"000671c6"</span></span><br></pre></td></tr></table></figure></p>
+<p>它支持几个其他功能： </p>
+<ul>
+<li>bit.tobit</li>
+<li>bit.tohex</li>
+<li>bit.bnot</li>
+<li>bit.band</li>
+<li>bit.bor</li>
+<li>bit.bxor</li>
+<li>bit.lshift</li>
+<li>bit.rshift</li>
+<li>bit.arshift</li>
+<li>bit.rol</li>
+<li>bit.ror</li>
+<li>bit.bswap</li>
+</ul>
+<h3 id="redis-sha1hex"><a href="#redis-sha1hex" class="headerlink" title="redis.sha1hex"></a>redis.sha1hex</h3><p>对字符串执行SHA1算法</p>
+<p>例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1:6379&gt; <span class="built_in">eval</span> <span class="string">'return redis.sha1hex(ARGV[1])'</span> 0 <span class="string">"foo"</span></span><br><span class="line"><span class="string">"0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33"</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="使用脚本记录-Redis-日志"><a href="#使用脚本记录-Redis-日志" class="headerlink" title="使用脚本记录 Redis 日志"></a>使用脚本记录 Redis 日志</h3><p>在 Lua 脚本中，可以通过调用 redis.log 函数来写 Redis 日志(log)：<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis.<span class="built_in">log</span>(loglevel,message)</span><br></pre></td></tr></table></figure></p>
+<p>其中， message 参数是一个字符串，而 loglevel 参数可以是以下任意一个值：</p>
+<ul>
+<li>redis.LOG_DEBUG</li>
+<li>redis.LOG_VERBOSE</li>
+<li>redis.LOG_NOTICE</li>
+<li>redis.LOG_WARNING</li>
+</ul>
+<p>上面的这些等级(level)和标准 Redis 日志的等级相对应。</p>
+<p>对于脚本散发(emit)的日志，只有那些和当前 Redis 实例所设置的日志等级相同或更高级的日志才会被散发。</p>
+<p>以下是一个日志示例：<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis.<span class="built_in">log</span>(redis.LOG_WARNING, <span class="string">"Something is wrong with this script."</span>)</span><br></pre></td></tr></table></figure></p>
+<p>执行上面的函数会产生这样的信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[32343] 22 Mar 15:21:39 # Something is wrong with this script.</span><br></pre></td></tr></table></figure></p>
+<h3 id="沙箱-sandbox-和最大执行时间"><a href="#沙箱-sandbox-和最大执行时间" class="headerlink" title="沙箱(sandbox)和最大执行时间"></a>沙箱(sandbox)和最大执行时间</h3><p>脚本应该仅仅用于传递参数和对 Redis 数据进行处理，它不应该尝试去访问外部系统(比如文件系统)，或者执行任何系统调用。</p>
+<p>除此之外，脚本还有一个最大执行时间限制，它的默认值是 5 秒钟，一般正常运作的脚本通常可以在几分之几毫秒之内完成，花不了那么多时间，这个限制主要是为了防止因编程错误而造成的无限循环而设置的。</p>
+<p>最大执行时间的长短由 lua-time-limit 选项来控制(以毫秒为单位)，可以通过编辑 redis.conf 文件或者使用 CONFIG GET 和 CONFIG SET 命令来修改它。</p>
+<p>当一个脚本达到最大执行时间的时候，它并不会自动被 Redis 结束，因为 Redis 必须保证脚本执行的原子性，而中途停止脚本的运行意味着可能会留下未处理完的数据在数据集(data set)里面。</p>
+<p>因此，当脚本运行的时间超过最大执行时间后，以下动作会被执行：</p>
+<ul>
+<li>Redis 记录一个脚本正在超时运行</li>
+<li>Redis 开始重新接受其他客户端的命令请求，但是只有 SCRIPT KILL 和 SHUTDOWN NOSAVE 两个命令会被处理，对于其他命令请求， Redis 服务器只是简单地返回 BUSY 错误。</li>
+<li>可以使用 SCRIPT KILL 命令将一个仅执行只读命令的脚本杀死，因为- - 只读命令并不修改数据，因此杀死这个脚本并不破坏数据的完整性<br>如果脚本已经执行过写命令，那么唯一允许执行的操作就是 SHUTDOWN NOSAVE ，它通过停止服务器来阻止当前数据集写入磁盘</li>
+</ul>
+<h3 id="流水线-pipeline-上下文-context-中的-EVALSHA"><a href="#流水线-pipeline-上下文-context-中的-EVALSHA" class="headerlink" title="流水线(pipeline)上下文(context)中的 EVALSHA"></a>流水线(pipeline)上下文(context)中的 EVALSHA</h3><p>在流水线请求的上下文中使用 EVALSHA 命令时，要特别小心，因为在流水线中，必须保证命令的执行顺序。</p>
+<p>一旦在流水线中因为 EVALSHA 命令而发生 NOSCRIPT 错误，那么这个流水线就再也没有办法重新执行了，否则的话，命令的执行顺序就会被打乱。</p>
+<p>为了防止出现以上所说的问题，客户端库实现应该实施以下的其中一项措施：</p>
+<ul>
+<li>总是在流水线中使用 EVAL 命令</li>
+<li>检查流水线中要用到的所有命令，找到其中的 EVAL 命令，并使用 SCRIPT EXISTS 命令检查要用到的脚本是不是全都已经保存在缓存里面了。如果所需的全部脚本都可以在缓存里找到，那么就可以放心地将所有 EVAL 命令改成 EVALSHA 命令，否则的话，就要在流水线的顶端(top)将缺少的脚本用 SCRIPT LOAD 命令加上去。</li>
+</ul>
+<h3 id="Spring-Boot-例子"><a href="#Spring-Boot-例子" class="headerlink" title="Spring Boot 例子"></a>Spring Boot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"脚本参数测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">paramsTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    List resultList = stringRedisTemplate.execute(<span class="keyword">new</span> RedisScript&lt;List&gt;() &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 返回脚本的sha1加密值</span></span><br><span class="line"><span class="comment">         * 避免重复传递脚本带来的性能损耗</span></span><br><span class="line"><span class="comment">         * Redis提供了一组命令：</span></span><br><span class="line"><span class="comment">         * SCRIPT LOAD 脚本 把脚本加载进Redis缓存中</span></span><br><span class="line"><span class="comment">         * SCRIPT EXIST sha1值 判断sha1是否存在于Redis缓存</span></span><br><span class="line"><span class="comment">         * EVALSHA sha1值 参数 通过sha1的方式云效指定的脚本</span></span><br><span class="line"><span class="comment">         * 本方法的作用主要是提供Redis脚本sha1后的值</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@return</span> 脚本sha1后的加密值</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getSha1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> DigestUtils.sha1DigestAsHex(getScriptAsString());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 脚本发返回值的Class实例</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@return</span> 返回值的Class实例</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> Class&lt;List&gt; <span class="title">getResultType</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> List.class;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 脚本</span></span><br><span class="line"><span class="comment">         * <span class="doctag">@return</span> 脚本</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getScriptAsString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"return &#123;KEYS[1],KEYS[2],ARGV[1],ARGV[2]&#125;"</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;, Arrays.asList(<span class="string">"key1"</span>, <span class="string">"key2"</span>), <span class="string">"arg1"</span>, <span class="string">"arg2"</span>);</span><br><span class="line"></span><br><span class="line">    Assertions.assertNotNull(resultList);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (Object result : resultList) &#123;</span><br><span class="line">        logger.info(<span class="string">"paramsTest,result:&#123;&#125;"</span>, result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"返回数字测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">returnNumberTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 这个地方有个坑，就是返回的数字没法包含小数</span></span><br><span class="line">    <span class="comment">// 如果要返回小数则需要在脚本里面转为string类型</span></span><br><span class="line">    <span class="comment">// 然后返回值用String接收</span></span><br><span class="line">    Number result = stringRedisTemplate.execute(<span class="keyword">new</span> RedisScript&lt;Number&gt;() &#123;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getSha1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> DigestUtils.sha1DigestAsHex(getScriptAsString());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> Class&lt;Number&gt; <span class="title">getResultType</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> Number.class;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getScriptAsString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"return 234.567"</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;, Collections.singletonList(<span class="string">"key1"</span>));</span><br><span class="line">    Assertions.assertNotNull(result);</span><br><span class="line">    logger.info(<span class="string">"result:&#123;&#125;"</span>, result);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"返回布尔值"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">returnBooleanTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Boolean result = stringRedisTemplate.execute(<span class="keyword">new</span> RedisScript&lt;Boolean&gt;() &#123;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getSha1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> DigestUtils.sha1DigestAsHex(getScriptAsString());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> Class&lt;Boolean&gt; <span class="title">getResultType</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> Boolean.class;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getScriptAsString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"return true"</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;, Collections.singletonList(<span class="string">"key1"</span>));</span><br><span class="line">    logger.info(<span class="string">"result:&#123;&#125;"</span>, result);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"错误处理-redis.call"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">errorTestByCall</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 虽然call 和 pcall测试用例都抛出了异常</span></span><br><span class="line">    <span class="comment">// 但是从运行结果上来看，可以发现</span></span><br><span class="line">    <span class="comment">// pcall 和call 最大的区别就是call会中断脚本的执行</span></span><br><span class="line">    <span class="comment">// 而pcall 只会在方法的返回值上返回一个错误信息</span></span><br><span class="line">    ListOperations&lt;String, String&gt; stringStringListOperations = stringRedisTemplate.opsForList();</span><br><span class="line">    String testKey = String.format(<span class="string">"errorTestByCall_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        stringStringListOperations.leftPush(testKey, UUID.randomUUID().toString());</span><br><span class="line">        RedisSystemException redisSystemException = Assertions.assertThrows(RedisSystemException.class, () -&gt; &#123;</span><br><span class="line">            Object result = stringRedisTemplate.execute(<span class="keyword">new</span> RedisScript&lt;Object&gt;() &#123;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> String <span class="title">getSha1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    <span class="keyword">return</span> DigestUtils.sha1DigestAsHex(getScriptAsString());</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> Class&lt;Object&gt; <span class="title">getResultType</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    <span class="keyword">return</span> Object.class;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> String <span class="title">getScriptAsString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="string">"redis.call('get',KEYS[1])\n"</span> +</span><br><span class="line">                            <span class="string">"redis.call('lpush ',KEYS[1],KEYS[1])"</span>;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;, Collections.singletonList(testKey));</span><br><span class="line">            logger.info(<span class="string">"result:&#123;&#125;"</span>, result);</span><br><span class="line">        &#125;);</span><br><span class="line">        logger.error(<span class="string">"error"</span>, redisSystemException);</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            String leftPop = stringStringListOperations.leftPop(testKey);</span><br><span class="line">            <span class="keyword">if</span> (StringUtils.isBlank(leftPop)) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            logger.info(<span class="string">"leftPop:&#123;&#125;"</span>, leftPop);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"错误处理-redis.pcall"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">errorTestByPCall</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 虽然call 和 pcall测试用例都抛出了异常</span></span><br><span class="line">    <span class="comment">// 但是从运行结果上来看，可以发现</span></span><br><span class="line">    <span class="comment">// pcall 和call 最大的区别就是call会中断脚本的执行</span></span><br><span class="line">    <span class="comment">// 而pcall 只会在方法的返回值上返回一个错误信息</span></span><br><span class="line">    ListOperations&lt;String, String&gt; stringStringListOperations = stringRedisTemplate.opsForList();</span><br><span class="line">    String testKey = String.format(<span class="string">"errorTestByPCall_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        stringStringListOperations.leftPush(testKey, UUID.randomUUID().toString());</span><br><span class="line">        RedisSystemException redisSystemException = Assertions.assertThrows(RedisSystemException.class, () -&gt; &#123;</span><br><span class="line">            Object result = stringRedisTemplate.execute(<span class="keyword">new</span> RedisScript&lt;Object&gt;() &#123;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> String <span class="title">getSha1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    <span class="keyword">return</span> DigestUtils.sha1DigestAsHex(getScriptAsString());</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> Class&lt;Object&gt; <span class="title">getResultType</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    <span class="keyword">return</span> Object.class;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="meta">@Override</span></span><br><span class="line">                <span class="function"><span class="keyword">public</span> String <span class="title">getScriptAsString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="string">"local error = redis.pcall('get',KEYS[1])\n"</span> +</span><br><span class="line">                            <span class="string">"redis.pcall('lpush',KEYS[1],KEYS[1])\n"</span> +</span><br><span class="line">                            <span class="string">"return error"</span>;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;, Collections.singletonList(testKey));</span><br><span class="line">            logger.info(<span class="string">"result:&#123;&#125;"</span>, result);</span><br><span class="line">        &#125;);</span><br><span class="line">        logger.error(<span class="string">"error"</span>, redisSystemException);</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            String leftPop = stringStringListOperations.leftPop(testKey);</span><br><span class="line">            <span class="keyword">if</span> (StringUtils.isBlank(leftPop)) &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            logger.info(<span class="string">"leftPop:&#123;&#125;"</span>, leftPop);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"返回复杂的数据"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">returnManyValue</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List resultList = stringRedisTemplate.execute(<span class="keyword">new</span> RedisScript&lt;List&gt;() &#123;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getSha1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> DigestUtils.sha1DigestAsHex(getScriptAsString());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> Class&lt;List&gt; <span class="title">getResultType</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> List.class;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getScriptAsString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"return &#123;1,2,&#123;3,'Hello World!'&#125;&#125;"</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;, Collections.singletonList(<span class="string">"testKey"</span>));</span><br><span class="line">    Assertions.assertNotNull(resultList);</span><br><span class="line">    <span class="keyword">for</span> (Object obj : resultList) &#123;</span><br><span class="line">        logger.info(<span class="string">"obj[&#123;&#125;]:&#123;&#125;"</span>, obj.getClass().getSimpleName(), obj);</span><br><span class="line">        <span class="keyword">if</span> (obj <span class="keyword">instanceof</span> List) &#123;</span><br><span class="line">            List childObjList = (List) obj;</span><br><span class="line">            <span class="keyword">for</span> (Object childObj : childObjList) &#123;</span><br><span class="line">                logger.info(<span class="string">"childObj[&#123;&#125;]:&#123;&#125;"</span>, childObj.getClass().getSimpleName(), childObj);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/pipelining/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/09/pipelining/" itemprop="url">管道（Pipelining）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-09T13:28:57+08:00">
+                2018-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="请求-响应协议和RTT"><a href="#请求-响应协议和RTT" class="headerlink" title="请求/响应协议和RTT"></a>请求/响应协议和RTT</h3><p>Redis是一种基于客户端-服务端模型以及请求/响应协议的TCP服务。</p>
+<p>这意味着通常情况下一个请求会遵循以下步骤：</p>
+<p>客户端向服务端发送一个查询请求，并监听Socket返回，通常是以阻塞模式，等待服务端响应。<br>服务端处理命令，并将结果返回给客户端。<br>因此，例如下面是4个命令序列执行情况：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Client: INCR X</span><br><span class="line">Server: 1</span><br><span class="line">Client: INCR X</span><br><span class="line">Server: 2</span><br><span class="line">Client: INCR X</span><br><span class="line">Server: 3</span><br><span class="line">Client: INCR X</span><br><span class="line">Server: 4</span><br></pre></td></tr></table></figure></p>
+<p>客户端和服务器通过网络进行连接。这个连接可以很快（loopback接口）或很慢（建立了一个多次跳转的网络连接）。无论网络延如何延时，数据包总是能从客户端到达服务器，并从服务器返回数据回复客户端。</p>
+<p>这个时间被称之为 RTT (Round Trip Time - 往返时间). 当客户端需要在一个批处理中执行多次请求时很容易看到这是如何影响性能的（例如添加许多元素到同一个list，或者用很多Keys填充数据库）。例如，如果RTT时间是250毫秒（在一个很慢的连接下），即使服务器每秒能处理100k的请求数，我们每秒最多也只能处理4个请求。</p>
+<p>如果采用loopback接口，RTT就短得多（比如我的主机ping 127.0.0.1只需要44毫秒），但它任然是一笔很多的开销在一次批量写入操作中。</p>
+<p>幸运的是有一种方法可以改善这种情况。</p>
+<h3 id="Redis-管道（Pipelining）"><a href="#Redis-管道（Pipelining）" class="headerlink" title="Redis 管道（Pipelining）"></a>Redis 管道（Pipelining）</h3><p>一次请求/响应服务器能实现处理新的请求即使旧的请求还未被响应。这样就可以将多个命令发送到服务器，而不用等待回复，最后在一个步骤中读取该答复。</p>
+<p>这就是管道（pipelining），是一种几十年来广泛使用的技术。例如许多POP3协议已经实现支持这个功能，大大加快了从服务器下载新邮件的过程。</p>
+<p>Redis很早就支持管道（pipelining）技术，因此无论你运行的是什么版本，你都可以使用管道（pipelining）操作Redis。下面是一个使用的例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ (<span class="built_in">printf</span> <span class="string">"PING\r\nPING\r\nPING\r\n"</span>; sleep 1) | nc localhost 6379</span><br><span class="line">+PONG</span><br><span class="line">+PONG</span><br><span class="line">+PONG</span><br></pre></td></tr></table></figure></p>
+<p>这一次我们没有为每个命令都花费了RTT开销，而是只用了一个命令的开销时间。</p>
+<p>非常明确的，用管道顺序操作的第一个例子如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Client: INCR X</span><br><span class="line">Client: INCR X</span><br><span class="line">Client: INCR X</span><br><span class="line">Client: INCR X</span><br><span class="line">Server: 1</span><br><span class="line">Server: 2</span><br><span class="line">Server: 3</span><br><span class="line">Server: 4</span><br></pre></td></tr></table></figure></p>
+<h3 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h3><p>使用管道发送命令时，服务器将被迫回复一个队列答复，占用很多内存。所以，如果你需要发送大量的命令，最好是把他们按照合理数量分批次的处理，例如10K的命令，读回复，然后再发送另一个10k的命令，等等。这样速度几乎是相同的，但是在回复这10k命令队列需要非常大量的内存用来组织返回数据内容。</p>
+<h3 id="这不仅仅是RTT的问题"><a href="#这不仅仅是RTT的问题" class="headerlink" title="这不仅仅是RTT的问题"></a>这不仅仅是RTT的问题</h3><p>不仅仅是为了减少往返时间所带来的延迟成本，它实际上可以提高您在给定的Redis服务器上每秒执行的总操作量。<br>这是事实的结果，即在不使用管道的情况下，从访问数据结构和生成答复的角度来看，每个命令的消耗都非常低，<br>但从调用的Socket I/O角度来看. 这涉及read()和write()的系统调用，意味着需要从用户空间到内核的空间不断的切换，而上下文切换会有巨大的消耗。</p>
+<p>当使用管道时，多个命令通常只用一次read()来从Socket IO读取出来，而多次响应则通过一次write()系统调用来传递。<br>因此，Redis每秒执行查询速率会随着随着较长的管道提高，并最终达到未使用管道情况的10倍</p>
+<h3 id="Ruby例子"><a href="#Ruby例子" class="headerlink" title="Ruby例子"></a>Ruby例子</h3><p>在以下基准测试中，我们将使用支持流水线的Redis Ruby客户端来测试由于流水线而导致的速度提升：<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span> <span class="string">'rubygems'</span></span><br><span class="line"><span class="keyword">require</span> <span class="string">'redis'</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bench</span><span class="params">(descr)</span></span></span><br><span class="line">    start = Time.now</span><br><span class="line">    <span class="keyword">yield</span></span><br><span class="line">    puts <span class="string">"<span class="subst">#&#123;descr&#125;</span> <span class="subst">#&#123;Time.now-start&#125;</span> seconds"</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">without_pipelining</span></span></span><br><span class="line">    r = Redis.new</span><br><span class="line">    <span class="number">10000</span>.times &#123;</span><br><span class="line">        r.ping</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">with_pipelining</span></span></span><br><span class="line">    r = Redis.new</span><br><span class="line">    r.pipelined &#123;</span><br><span class="line">        <span class="number">10000</span>.times &#123;</span><br><span class="line">            r.ping</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">bench(<span class="string">"without pipelining"</span>) &#123;</span><br><span class="line">    without_pipelining</span><br><span class="line">&#125;</span><br><span class="line">bench(<span class="string">"with pipelining"</span>) &#123;</span><br><span class="line">    with_pipelining</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>运行上述简单脚本将在我的Mac OS X系统中提供以下图形，通过环回接口运行，其中流水线将提供最小的改进，因为RTT已经非常低：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">without pipelining 1.185238 seconds</span><br><span class="line">with pipelining 0.250783 seconds</span><br></pre></td></tr></table></figure></p>
+<p>正如您所看到的，使用流水线，我们将传输改进了五倍。</p>
+<h3 id="Spring-Boot-例子"><a href="#Spring-Boot-例子" class="headerlink" title="Spring Boot 例子"></a>Spring Boot 例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"批量GET测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">batchGetTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 测试的key</span></span><br><span class="line">    String testKey = String.format(<span class="string">"keyNotExistTest_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line"></span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"编码testKey失败"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// testKey对应的原始值</span></span><br><span class="line">        String originalValue = <span class="string">"a"</span>;</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置testKey一个值，因此testKey会存在与redis</span></span><br><span class="line">        stringRedisTemplate.opsForValue().set(testKey, originalValue);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey set value is &#123;&#125;,so the key is exist in redis"</span>, originalValue);</span><br><span class="line"></span><br><span class="line">        List&lt;Object&gt; resultList = stringRedisTemplate.executePipelined((RedisCallback&lt;Object&gt;) connection -&gt; &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">                connection.get(testKeySerializeBytes);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 在Pipeline情况下只能返回NULL</span></span><br><span class="line">            <span class="comment">// 毕竟是有点异步的意思，不能立马获得命令的结果的</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">        resultList.forEach(o -&gt; logger.info(<span class="string">"pipeline result is &#123;&#125;"</span>, o));</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 最后删除这个key，避免产生大量无用数据</span></span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"批量SET"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">batchSetTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; keySerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>)</span><br><span class="line">    RedisSerializer&lt;String&gt; valueSerializer = (RedisSerializer&lt;String&gt;) stringRedisTemplate.getValueSerializer();</span><br><span class="line"></span><br><span class="line">    List&lt;String&gt; testKeyList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        List&lt;Object&gt; resultList = stringRedisTemplate.executePipelined((RedisCallback&lt;Object&gt;) connection -&gt; &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">                <span class="comment">// 测试的key</span></span><br><span class="line">                String testKey = String.format(<span class="string">"batchSetTest_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line"></span><br><span class="line">                testKeyList.add(testKey);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// testKey对应的原始值</span></span><br><span class="line">                String value = UUID.randomUUID().toString();</span><br><span class="line"></span><br><span class="line">                logger.info(<span class="string">"testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">                <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"编码testKey失败"</span>);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">               <span class="keyword">final</span> <span class="keyword">byte</span>[] valueSerializeBytes = valueSerializer.serialize(value);</span><br><span class="line">                <span class="keyword">if</span> (valueSerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"编码testKey失败"</span>);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                connection.set(testKeySerializeBytes, valueSerializeBytes);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 在Pipeline情况下只能返回NULL</span></span><br><span class="line">            <span class="comment">// 毕竟是有点异步的意思，不能立马获得命令的结果的</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">        resultList.forEach(o -&gt; logger.info(<span class="string">"pipeline result is &#123;&#125;"</span>, o));</span><br><span class="line">        testKeyList.forEach(testKey -&gt; &#123;</span><br><span class="line">            String value = stringRedisTemplate.opsForValue().get(testKey);</span><br><span class="line">            logger.info(<span class="string">"after pipeline get testKey:&#123;&#125;,value is &#123;&#125;"</span>, testKey, value);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKeyList);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="流水线VS脚本"><a href="#流水线VS脚本" class="headerlink" title="流水线VS脚本"></a>流水线VS脚本</h3><p>使用Redis脚本（Redis版本2.6或更高版本中可用），可以使用执行服务器端所需大量工作的脚本更高效地处理大量流水线用例。<br>脚本的一大优点是它能够以最小的延迟读取和写入数据，使得读取，计算，写入等操作非常快速（在这种情况下流水线操作无法提供帮助，因为客户端需要先读取命令的回复它可以调用写命令）。</p>
+<p>简单理解，就是单一的批量操作，适合用用管道方式<br>如果遇到下一个命令参数是上一个命令的结果构成，那适合脚本方式</p>
+<p>有时，应用程序可能还想在管道中发送EVAL或EVALSHA命令。这是完全可能的，并且Redis通过SCRIPT LOAD命令明确支持它（它保证可以在没有失败风险的情况下调用EVALSHA）。</p>
+<h3 id="附录：为什么即使在本地回环接口上，一个繁忙的循环也很慢？"><a href="#附录：为什么即使在本地回环接口上，一个繁忙的循环也很慢？" class="headerlink" title="附录：为什么即使在本地回环接口上，一个繁忙的循环也很慢？"></a>附录：为什么即使在本地回环接口上，一个繁忙的循环也很慢？</h3><p>即使在本页面介绍的所有背景下，您仍然可能仍然想知道为什么如下所示的Redis基准测试（在伪代码中），即使在回环接口中执行时，服务器和客户端在同一物理机器上运行时，也很慢：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">FOR-ONE-SECOND:</span><br><span class="line">    Redis.SET(&quot;foo&quot;,&quot;bar&quot;)</span><br><span class="line">END</span><br></pre></td></tr></table></figure></p>
+<p>毕竟，如果Redis进程和基准测试都在同一个机器上运行，那么这不仅仅是通过内存从一个地方复制到另一个地方，而没有任何实际的延迟和实际网络？</p>
+<p>原因是系统中的进程并不总是在运行，实际上它是让进程运行的内核调度器，所以会发生什么，例如，允许基准运行，从Redis服务器读取回复（相关到执行的最后一个命令），并写入一个新的命令。该命令现在位于回环接口缓冲区中，但为了被服务器读取，内核应该安排服务器进程（当前在系统调用中阻塞）运行，等等。因此，实际上，由于内核调度程序的工作原理，回送接口仍然涉及网络延迟。</p>
+<p>基本上，一个繁忙的循环基准测试是在网络服务器中测量性能时可以完成的最难的事情。明智的做法是以这种方式避免基准测试。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/DECR/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/08/DECR/" itemprop="url">DECR</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T17:39:20+08:00">
+                2018-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="DECR-key"><a href="#DECR-key" class="headerlink" title="DECR key"></a>DECR key</h3><h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>对key对应的数字做减1操作。如果key不存在，那么在操作之前，这个key对应的值会被置为0。如果key有一个错误类型的value或者是一个不能表示成数字的字符串，就返回错误。这个操作最大支持在64位有符号的整型数字。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 1.0.0</li>
+<li>时间复杂度: O(1)</li>
+<li>返回值: Integers,减小之后的value</li>
+</ul>
+<hr>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET mykey <span class="string">"10"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; DECR mykey</span><br><span class="line">(<span class="built_in">integer</span>) 9</span><br><span class="line">redis&gt; SET mykey <span class="string">"234293482390480948029348230948"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; DECR mykey</span><br><span class="line">ERR value is not an <span class="built_in">integer</span> or out of range</span><br><span class="line">redis&gt; DEL mykey</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br></pre></td></tr></table></figure>
+<h3 id="Spring-Boot例子"><a href="#Spring-Boot例子" class="headerlink" title="Spring Boot例子"></a>Spring Boot例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"testKey不存在的情况"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testKeyNotExist</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 测试的key</span></span><br><span class="line">    String testKey = String.format(<span class="string">"keyNotExistTest_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"序列化testKey失败"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;,the testKey is a random key ,so it not exist in redis"</span>, testKey);</span><br><span class="line"></span><br><span class="line">        Long decreaseReturn = stringRedisTemplate.execute(<span class="keyword">new</span> RedisCallback&lt;Long&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Long <span class="title">doInRedis</span><span class="params">(@Nullable RedisConnection connection)</span> <span class="keyword">throws</span> DataAccessException </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (connection == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"无法连接redis"</span>);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> connection.decr(testKeySerializeBytes);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey decr is ok and result is &#123;&#125;"</span>, decreaseReturn);</span><br><span class="line"></span><br><span class="line">        String value = stringRedisTemplate.opsForValue().get(testKey);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"after decr,value is:&#123;&#125;"</span>, value);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 最后删除这个key，避免产生大量无用数据</span></span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"testKey存在的情况"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testKeyExist</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 测试Key</span></span><br><span class="line">    String testKey = String.format(<span class="string">"keyExistTest_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"序列化testKey失败"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// testKey对应的原始值</span></span><br><span class="line">        String originalValue = <span class="string">"1234"</span>;</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line"></span><br><span class="line">        ValueOperations&lt;String, String&gt; stringStringValueOperations = stringRedisTemplate.opsForValue();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置testKey一个值，因此testKey会存在与redis</span></span><br><span class="line">        stringStringValueOperations.set(testKey, originalValue);</span><br><span class="line">        logger.info(<span class="string">"testKey set value is &#123;&#125;,so the key is exist in redis"</span>, originalValue);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 在testKey存在的情况下append</span></span><br><span class="line">        Long decreaseValueReturn = stringRedisTemplate.execute(<span class="keyword">new</span> RedisCallback&lt;Long&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Long <span class="title">doInRedis</span><span class="params">(@Nullable RedisConnection connection)</span> <span class="keyword">throws</span> DataAccessException </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (connection == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"链接Redis失败"</span>);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> connection.decr(testKeySerializeBytes);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        logger.info(<span class="string">"testKey decr ok and result is &#123;&#125;"</span>, decreaseValueReturn);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 重新获取testKey的值</span></span><br><span class="line">        String newValue = stringStringValueOperations.get(testKey);</span><br><span class="line">        logger.info(<span class="string">"after decr testKey`s value is &#123;&#125;"</span>, newValue);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 最后删除这个key，避免产生大量无用数据</span></span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"value不是数字情况下"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">valueNotNumber</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 测试Key</span></span><br><span class="line">    String testKey = String.format(<span class="string">"valueNotNumber_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">if</span> (testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"序列化testKey失败"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// testKey对应的原始值</span></span><br><span class="line">        String originalValue = <span class="string">"abc"</span>;</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line"></span><br><span class="line">        ValueOperations&lt;String, String&gt; stringStringValueOperations = stringRedisTemplate.opsForValue();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置testKey一个值，因此testKey会存在与redis</span></span><br><span class="line">        stringStringValueOperations.set(testKey, originalValue);</span><br><span class="line">        logger.info(<span class="string">"testKey set value is &#123;&#125;,so the key is exist in redis"</span>, originalValue);</span><br><span class="line"></span><br><span class="line">        RedisSystemException redisSystemException = Assertions.assertThrows(RedisSystemException.class, <span class="keyword">new</span> Executable() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">()</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">                <span class="comment">// 在testKey存在的情况下decr</span></span><br><span class="line">                Long decreaseValueReturn = stringRedisTemplate.execute(<span class="keyword">new</span> RedisCallback&lt;Long&gt;() &#123;</span><br><span class="line">                    <span class="meta">@Override</span></span><br><span class="line">                    <span class="function"><span class="keyword">public</span> Long <span class="title">doInRedis</span><span class="params">(@Nullable RedisConnection connection)</span> <span class="keyword">throws</span> DataAccessException </span>&#123;</span><br><span class="line">                        <span class="keyword">if</span> (connection == <span class="keyword">null</span>) &#123;</span><br><span class="line">                            <span class="keyword">throw</span> <span class="keyword">new</span> BaseException(<span class="string">"链接Redis失败"</span>);</span><br><span class="line">                        &#125;</span><br><span class="line">                        <span class="keyword">return</span> connection.decr(testKeySerializeBytes);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">                logger.info(<span class="string">"testKey decr ok and result is &#123;&#125;"</span>, decreaseValueReturn);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        logger.error(<span class="string">"now is decr key value is not number exception"</span>, redisSystemException);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 重新获取testKey的值</span></span><br><span class="line">        String newValue = stringStringValueOperations.get(testKey);</span><br><span class="line">        logger.info(<span class="string">"after decr testKey`s value is &#123;&#125;"</span>, newValue);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 最后删除这个key，避免产生大量无用数据</span></span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/BITPOS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/08/BITPOS/" itemprop="url">BITPOS</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T17:31:04+08:00">
+                2018-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="BITPOS-key-bit-start-end"><a href="#BITPOS-key-bit-start-end" class="headerlink" title="BITPOS key bit [start] [end]"></a>BITPOS key bit [start] [end]</h3><h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>返回字符串里面第一个被设置为1或者0的bit位。</p>
+<p>返回一个位置，把字符串当做一个从左到右的字节数组，第一个符合条件的在位置0，其次在位置8，等等。</p>
+<p>GETBIT 和 SETBIT 相似的也是操作字节位的命令。</p>
+<p>默认情况下整个字符串都会被检索一次，只有在指定start和end参数(指定start和end位是可行的)，该范围被解释为一个字节的范围，而不是一系列的位。所以start=0 并且 end=2是指前三个字节范围内查找。</p>
+<p>注意，返回的位的位置始终是从0开始的，即使使用了start来指定了一个开始字节也是这样。</p>
+<p>和GETRANGE命令一样，start和end也可以包含负值，负值将从字符串的末尾开始计算，-1是字符串的最后一个字节，-2是倒数第二个，等等。</p>
+<p>不存在的key将会被当做空字符串来处理。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 2.6.0</li>
+<li>时间复杂度: O(N)</li>
+<li>返回值: 命令返回字符串里面第一个被设置为1或者0的bit位。<br>如果我们在空字符串或者0字节的字符串里面查找bit为1的内容，那么结果将返回-1。<br>如果我们在字符串里面查找bit为0而且字符串只包含1的值时，将返回字符串最右边的第一个空位。如果有一个字符串是三个字节的值为0xff的字符串，那么命令BITPOS key 0将会返回24，因为0-23位都是1。<br>基本上，我们可以把字符串看成右边有无数个0。<br>然而，如果你用指定start和end范围进行查找指定值时，如果该范围内没有对应值，结果将返回-1。</li>
+</ul>
+<hr>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET mykey <span class="string">"\xff\xf0\x00"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; BITPOS mykey 0 <span class="comment"># 查找字符串里面bit值为0的位置</span></span><br><span class="line">(<span class="built_in">integer</span>) 12</span><br><span class="line">redis&gt; SET mykey <span class="string">"\x00\xff\xf0"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; BITPOS mykey 1 0 <span class="comment"># 查找字符串里面bit值为1从第0个字节开始的位置</span></span><br><span class="line">(<span class="built_in">integer</span>) 8</span><br><span class="line">redis&gt; BITPOS mykey 1 2 <span class="comment"># 查找字符串里面bit值为1从第2个字节(12)开始的位置</span></span><br><span class="line">(<span class="built_in">integer</span>) 16</span><br><span class="line">redis&gt; <span class="built_in">set</span> mykey <span class="string">"\x00\x00\x00"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; BITPOS mykey 1 <span class="comment"># 查找字符串里面bit值为1的位置</span></span><br><span class="line">(<span class="built_in">integer</span>) -1</span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/BITOP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/08/BITOP/" itemprop="url">BITOP</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T16:30:46+08:00">
+                2018-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="BITOP-operation-destkey-key-key-…-s"><a href="#BITOP-operation-destkey-key-key-…-s" class="headerlink" title="BITOP operation destkey key [key …]s"></a>BITOP operation destkey key [key …]s</h3><h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>对一个或多个保存二进制位的字符串 key 进行位元操作，并将结果保存到 destkey 上。</p>
+<p>BITOP 命令支持 AND 、 OR 、 NOT 、 XOR 这四种操作中的任意一种参数：</p>
+<ul>
+<li>BITOP AND destkey srckey1 srckey2 srckey3 … srckeyN ，对一个或多个 key 求逻辑并，并将结果保存到 destkey 。</li>
+<li>BITOP OR destkey srckey1 srckey2 srckey3 … srckeyN，对一个或多个 key 求逻辑或，并将结果保存到 destkey 。</li>
+<li>BITOP XOR destkey srckey1 srckey2 srckey3 … srckeyN，对一个或多个 key 求逻辑异或，并将结果保存到 destkey 。</li>
+<li>BITOP NOT destkey srckey，对给定 key 求逻辑非，并将结果保存到 destkey 。</li>
+</ul>
+<p>除了 NOT 操作之外，其他操作都可以接受一个或多个 key 作为输入。<br>执行结果将始终保持到destkey里面。</p>
+<h3 id="处理不同长度的字符串"><a href="#处理不同长度的字符串" class="headerlink" title="处理不同长度的字符串"></a>处理不同长度的字符串</h3><p>当 BITOP 处理不同长度的字符串时，较短的那个字符串所缺少的部分会被看作 0 。<br>空的 key 也被看作是包含 0 的字符串序列。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 2.6.0</li>
+<li>时间复杂度: O(N)</li>
+<li>返回值: Integers,保存到 destkey 的字符串的长度，和输入 key 中最长的字符串长度相等。</li>
+</ul>
+<hr>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET key1 <span class="string">"foobar"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; SET key2 <span class="string">"abcdef"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; BITOP AND dest key1 key2</span><br><span class="line">(<span class="built_in">integer</span>) 6</span><br><span class="line">redis&gt; GET dest</span><br><span class="line"><span class="string">"`bc`ab"</span></span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/BITFIELD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/08/BITFIELD/" itemprop="url">BITFIELD</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T15:41:28+08:00">
+                2018-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="BITFIELD-key-GET-type-offset-SET-type-offset-value-INCRBY-type-offset-increment-OVERFLOW-WRAP-SAT-FAIL"><a href="#BITFIELD-key-GET-type-offset-SET-type-offset-value-INCRBY-type-offset-increment-OVERFLOW-WRAP-SAT-FAIL" class="headerlink" title="BITFIELD key [GET type offset] [SET type offset value] [INCRBY type offset increment] [OVERFLOW WRAP|SAT|FAIL]"></a>BITFIELD key [GET type offset] [SET type offset value] [INCRBY type offset increment] [OVERFLOW WRAP|SAT|FAIL]</h3><h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>本命令会把Redis字符串当作位数组，并能对变长位宽和任意未字节对齐的指定整型位域进行寻址。在实践中，可以使用该命令对一个有符号的5位整型数的1234位设置指定值，也可以对一个31位无符号整型数的4567位进行取值。<br>类似地，在对指定的整数进行自增和自减操作，本命令可以提供有保证的、可配置的上溢和下溢处理操作。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 3.2.0</li>
+<li>时间复杂度: O(1) for each subcommand specified</li>
+</ul>
+<h3 id="已支持的命令列表"><a href="#已支持的命令列表" class="headerlink" title="已支持的命令列表"></a>已支持的命令列表</h3><ul>
+<li>GET <type> <offset> – 返回指定的位域</offset></type></li>
+<li>SET <type> <offset> <value> – 设置指定位域的值并返回它的原值</value></offset></type></li>
+<li>INCRBY <type> <offset> <increment> – 自增或自减（如果increment为负数）指定位域的值并返回它的新值</increment></offset></type></li>
+<li>OVERFLOW [WRAP|SAT|FAIL] 通过设置溢出处理方式来改变调用INCRBY指令的后溢出的结果</li>
+</ul>
+<p>当需要一个整型时，有符号整型需在位数前加i，无符号在位数前加u。例如，u8是一个8位的无符号整型，i16是一个16位的有符号整型。</p>
+<p>有符号整型最大支持64位，而无符号整型最大支持63位。对无符号整型的限制，是由于当前Redis协议不能在响应消息中返回64位无符号整数。</p>
+<h3 id="位和位偏移"><a href="#位和位偏移" class="headerlink" title="位和位偏移"></a>位和位偏移</h3><p>bitfield命令有两种方式来指定位偏移。如果未定带数字的前缀，将会以字符串的第0位作为起始位。</p>
+<p>不过，如果偏移量带有#前缀，那么指定的偏移量需要乘以整型宽度，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BITFIELD mystring SET i8 #0 100 i8 #1 200</span><br></pre></td></tr></table></figure></p>
+<p>将会在第1个i8整数的偏移0位和第2个整数的偏移8位进行设值。如果想得到一个给定长度的普通整型数组，则不一定要在客户端进行计算。</p>
+<h3 id="溢出控制"><a href="#溢出控制" class="headerlink" title="溢出控制"></a>溢出控制</h3><p>使用OVERFLOW命令，用户可以通过指定下列其中一种行为来调整自增或自减操作溢出（或下溢）后的行为：</p>
+<ul>
+<li>WRAP: 回环算法，适用于有符号和无符号整型两种类型。对于无符号整型，回环计数将对整型最大值进行取模操作（C语言的标准行为）。对于有符号整型，上溢从最负的负数开始取数，下溢则从最大的正数开始取数，例如，如果i8整型的值设为127，自加1后的值变为-128。</li>
+<li>SAT: 饱和算法，下溢之后设为最小的整型值，上溢之后设为最大的整数值。例如，i8整型的值从120开始加10后，结果是127，继续增加，结果还是保持为127。下溢也是同理，但量结果值将会保持在最负的负数值。</li>
+<li>FAIL: 失败算法，这种模式下，在检测到上溢或下溢时，不做任何操作。相应的返回值会设为NULL，并返回给调用者。<br>注意每种溢出（OVERFLOW）控制方法，仅影响紧跟在INCRBY命令后的子命令，直到重新指定溢出（OVERFLOW）控制方法。</li>
+</ul>
+<p>如果没有指定溢出控制方法，默认情况下，将使用WRAP算法。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; BITFIELD mykey incrby u2 100 1 OVERFLOW SAT incrby u2 102 1</span><br><span class="line">1) (<span class="built_in">integer</span>) 1</span><br><span class="line">2) (<span class="built_in">integer</span>) 1</span><br><span class="line">&gt; BITFIELD mykey incrby u2 100 1 OVERFLOW SAT incrby u2 102 1</span><br><span class="line">1) (<span class="built_in">integer</span>) 2</span><br><span class="line">2) (<span class="built_in">integer</span>) 2</span><br><span class="line">&gt; BITFIELD mykey incrby u2 100 1 OVERFLOW SAT incrby u2 102 1</span><br><span class="line">1) (<span class="built_in">integer</span>) 3</span><br><span class="line">2) (<span class="built_in">integer</span>) 3</span><br><span class="line">&gt; BITFIELD mykey incrby u2 100 1 OVERFLOW SAT incrby u2 102 1</span><br><span class="line">1) (<span class="built_in">integer</span>) 0</span><br><span class="line">2) (<span class="built_in">integer</span>) 3</span><br></pre></td></tr></table></figure></p>
+<p>BITFIELD命令能操作多字节位域，它会执行一系列操作，并返回一个响应数组，在参数列表中每个响应数组匹配相应的操作。</p>
+<p>例如，下面的命令是对一个8位有符号整数偏移100位自增1，并获取4位无符号整数的值：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; BITFIELD mykey INCRBY i5 100 1 GET u4 0</span><br><span class="line">1) (<span class="built_in">integer</span>) 1</span><br><span class="line">2) (<span class="built_in">integer</span>) 0</span><br></pre></td></tr></table></figure></p>
+<h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><p>用GET指令对超出当前字符串长度的位（含key不存在的情况）进行寻址，执行操作的结果会对缺失部分的位（bits）赋值为0。<br>用SET或INCRBY指令对超出当前字符串长度的位（含key不存在的情况）进行寻址，将会扩展字符串并对扩展部分进行补0，扩展方式包括：按需扩展、按最小长度扩展和按最大寻址能力扩展。</p>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p>本命令返回一个针对子命令给定位置的处理结果组成的数组。OVERFLOW子命令在响应消息中，不会统计结果的条数。</p>
+<p>下面是OVERFLOW FAIL返回NULL的样例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; BITFIELD mykey OVERFLOW FAIL incrby u2 102 1</span><br><span class="line">1) (nil)</span><br></pre></td></tr></table></figure></p>
+<h3 id="动机（Motivations）"><a href="#动机（Motivations）" class="headerlink" title="动机（Motivations）"></a>动机（Motivations）</h3><p>本命令的动机是为了能够在单个大位图（large bitmap）中高效地存储多个小整数（或对键分成多个key，避免出现超大键），同时开放Redis提供的新使用案例，尤其是在实时分析领域。这种使用案例可以通过指定的溢出控制方法来支持。</p>
+<h3 id="性能考虑（Performance-considerations）"><a href="#性能考虑（Performance-considerations）" class="headerlink" title="性能考虑（Performance considerations）"></a>性能考虑（Performance considerations）</h3><p>通常，BITFIELD是一个非常快的命令，但是注意，对短字符串的远地址（fat bits）寻址，将会比在存在的位执行命令更加耗时。</p>
+<h3 id="字节序（Orders-of-bits）"><a href="#字节序（Orders-of-bits）" class="headerlink" title="字节序（Orders of bits）"></a>字节序（Orders of bits）</h3><p>BITFIELD命令使用的位图表现形式，可看作是从0位开始的，例如：把一个5位的无符号整数23，对一个所有位事先置0的位图，从第7位开始赋值，其结果如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+--------+--------+</span><br><span class="line">|00000001|01110000|</span><br><span class="line">+--------+--------+</span><br></pre></td></tr></table></figure></p>
+<p>当偏移量和整型大小是字节边界对齐时，此时与大端模式（big endian）相同，但是，当字节边界未对齐时，那么理解字节序将变得非常重要。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/BITCOUNT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/08/BITCOUNT/" itemprop="url">BITCOUNT</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T15:04:56+08:00">
+                2018-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="BITCOUNT-key-start-end"><a href="#BITCOUNT-key-start-end" class="headerlink" title="BITCOUNT key [start end]"></a>BITCOUNT key [start end]</h3><h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>统计字符串被设置为1的bit数.</p>
+<p>一般情况下，给定的整个字符串都会被进行计数，通过指定额外的 start 或 end 参数，可以让计数只在特定的位上进行。</p>
+<p>start 和 end 参数的设置和 GETRANGE 命令类似，都可以使用负数值：比如 -1 表示最后一个位，而 -2 表示倒数第二个位，以此类推。</p>
+<p>不存在的 key 被当成是空字符串来处理，因此对一个不存在的 key 进行 BITCOUNT 操作，结果为 0 </p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 2.6.0</li>
+<li>时间复杂度: O(N)</li>
+<li>返回值： Integers,被设置为 1 的位的数量。</li>
+</ul>
+<hr>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SET testKey <span class="string">"foobar"</span></span><br><span class="line">OK</span><br><span class="line">redis&gt; BITCOUNT testKey</span><br><span class="line">(<span class="built_in">integer</span>) 26</span><br><span class="line">redis&gt; BITCOUNT testKey 0 0</span><br><span class="line">(<span class="built_in">integer</span>) 4</span><br><span class="line">redis&gt; BITCOUNT testKey 1 1</span><br><span class="line">(<span class="built_in">integer</span>) 6</span><br><span class="line">redis&gt; DEL testKey</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br></pre></td></tr></table></figure>
+<h3 id="Spring-Boot例子"><a href="#Spring-Boot例子" class="headerlink" title="Spring Boot例子"></a>Spring Boot例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"testKey存在"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testKeyExist</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 测试的key</span></span><br><span class="line">    <span class="keyword">final</span> String testKey = String.format(<span class="string">"keyNotExistTest_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    RedisSerializer keySerializer = stringRedisTemplate.getKeySerializer();</span><br><span class="line">    <span class="meta">@SuppressWarnings</span>(<span class="string">"unchecked"</span>) <span class="keyword">final</span> <span class="keyword">byte</span>[] testKeySerializeBytes = keySerializer.serialize(testKey);</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// testKey对应的value</span></span><br><span class="line">        String value = <span class="string">"foobar"</span>;</span><br><span class="line"></span><br><span class="line">        stringRedisTemplate.opsForValue().set(testKey, value);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125; and set value is &#123;&#125;"</span>, testKey, value);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 由于stringRedisTemplate没提供bitCount方法</span></span><br><span class="line">        <span class="comment">// 所以我们得绕一下，先获得到Connection对象，再通过Connection去调用bitCount</span></span><br><span class="line">        Long bitCountAllValueResult = stringRedisTemplate.execute(<span class="keyword">new</span> RedisCallback&lt;Long&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Long <span class="title">doInRedis</span><span class="params">(@Nullable RedisConnection connection)</span> <span class="keyword">throws</span> DataAccessException </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (connection == <span class="keyword">null</span> || testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">return</span> -<span class="number">1L</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> connection.bitCount(testKeySerializeBytes);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        logger.info(<span class="string">"bitCount all value result:&#123;&#125;"</span>, bitCountAllValueResult);</span><br><span class="line"></span><br><span class="line">        Long bitCount0AND0ValueResult = stringRedisTemplate.execute(<span class="keyword">new</span> RedisCallback&lt;Long&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Long <span class="title">doInRedis</span><span class="params">(@Nullable RedisConnection connection)</span> <span class="keyword">throws</span> DataAccessException </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (connection == <span class="keyword">null</span> || testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">return</span> -<span class="number">1L</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> connection.bitCount(testKeySerializeBytes, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        logger.info(<span class="string">"bitCount testKey 0 0 result:&#123;&#125;"</span>, bitCount0AND0ValueResult);</span><br><span class="line"></span><br><span class="line">        Long bitCount1AND1ValueResult = stringRedisTemplate.execute(<span class="keyword">new</span> RedisCallback&lt;Long&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Long <span class="title">doInRedis</span><span class="params">(@Nullable RedisConnection connection)</span> <span class="keyword">throws</span> DataAccessException </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (connection == <span class="keyword">null</span> || testKeySerializeBytes == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    <span class="keyword">return</span> -<span class="number">1L</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> connection.bitCount(testKeySerializeBytes, <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        logger.info(<span class="string">"bitCount testKey 1 1 result:&#123;&#125;"</span>, bitCount1AND1ValueResult);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 最后删除这个key，避免产生大量无用数据</span></span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/07/APPEND/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/07/APPEND/" itemprop="url">APPEND</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T15:33:10+08:00">
+                2018-05-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="APPEND-key-value"><a href="#APPEND-key-value" class="headerlink" title="APPEND key value"></a>APPEND key value</h3><h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>如果 key 已经存在，并且值为字符串，那么这个命令会把 value 追加到原来值（value）的结尾。<br>如果 key 不存在，那么它将首先创建一个空字符串的key，再执行追加操作，这种情况 APPEND 将类似于 SET 操作。</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 2.0.0</li>
+<li>时间复杂度: O(1)。均摊时间复杂度是O(1)， 因为redis用的动态字符串的库在每次分配空间的时候会增加一倍的可用空闲空间，所以在添加的value较小而且已经存在的 value是任意大小的情况下，均摊时间复杂度是O(1) 。</li>
+<li>返回值： Integers,返回append后字符串值（value）的长度。</li>
+</ul>
+<hr>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; EXISTS testKey</span><br><span class="line">(<span class="built_in">integer</span>) 0</span><br><span class="line">redis&gt; APPEND testKey <span class="string">"Hello"</span></span><br><span class="line">(<span class="built_in">integer</span>) 5</span><br><span class="line">redis&gt; APPEND testKey <span class="string">" World"</span></span><br><span class="line">(<span class="built_in">integer</span>) 11</span><br><span class="line">redis&gt; GET testKey</span><br><span class="line"><span class="string">"Hello World"</span></span><br><span class="line">redis&gt; DEL testKey</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br></pre></td></tr></table></figure>
+<h3 id="Spring-Boot例子"><a href="#Spring-Boot例子" class="headerlink" title="Spring Boot例子"></a>Spring Boot例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key不存在的情况"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyNotExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 测试的key</span></span><br><span class="line">    String testKey = String.format(<span class="string">"keyNotExistTest_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 要append的值</span></span><br><span class="line">        String appendValue = <span class="string">"a"</span>;</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;,the testKey is a random key ,so it not exist in redis"</span>, testKey);</span><br><span class="line"></span><br><span class="line">        ValueOperations&lt;String, String&gt; stringStringValueOperations = stringRedisTemplate.opsForValue();</span><br><span class="line"></span><br><span class="line">        Integer appendResult = stringStringValueOperations.append(testKey, appendValue);</span><br><span class="line">        logger.info(<span class="string">"testKey append is ok and result is &#123;&#125;"</span>, appendResult);</span><br><span class="line"></span><br><span class="line">        String value = stringStringValueOperations.get(testKey);</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"keyNotExistTest,append value is:&#123;&#125;,result value is:&#123;&#125;"</span>, appendValue, value);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 最后删除这个key，避免产生大量无用数据</span></span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key存在的情况"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 测试Key</span></span><br><span class="line">    String testKey = String.format(<span class="string">"keyExistTest_%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// testKey对应的原始值</span></span><br><span class="line">        String originalValue = <span class="string">"a"</span>;</span><br><span class="line">        <span class="comment">// testKey要加的值</span></span><br><span class="line">        String appendValue = <span class="string">"b"</span>;</span><br><span class="line"></span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line"></span><br><span class="line">        ValueOperations&lt;String, String&gt; stringStringValueOperations = stringRedisTemplate.opsForValue();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置testKey一个值，因此testKey会存在与redis</span></span><br><span class="line">        stringStringValueOperations.set(testKey, originalValue);</span><br><span class="line">        logger.info(<span class="string">"testKey set value is &#123;&#125;,so the key is exist in redis"</span>, originalValue);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 在testKey存在的情况下append</span></span><br><span class="line">        Integer appendResult = stringStringValueOperations.append(testKey, appendValue);</span><br><span class="line">        logger.info(<span class="string">"testKey append ok and result is &#123;&#125;"</span>, appendResult);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// append之后重新获得新的key对应的value</span></span><br><span class="line">        String newValue = stringStringValueOperations.get(testKey);</span><br><span class="line">        logger.info(<span class="string">"after append testKey`s value is &#123;&#125;"</span>, newValue);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        <span class="comment">// 最后删除这个key，避免产生大量无用数据</span></span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/07/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="刘泽航">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/07/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T13:40:46+08:00">
+                2018-05-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">刘泽航</p>
+              <p class="site-description motion-element" itemprop="description">Redis</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">120</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">刘泽航</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
