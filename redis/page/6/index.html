@@ -276,6 +276,134 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/redis/2018/05/18/sunionstore/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/redis/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Redis文档">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/redis/2018/05/18/sunionstore/" itemprop="url">sunionstore</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-18T15:24:23+08:00">
+                2018-05-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SUNIONSTORE destination key [key ...]</span><br></pre></td></tr></table></figure>
+<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>该命令作用类似于SUNION命令,不同的是它并不返回结果集,而是将结果存储在destination集合中.</p>
+<p>如果destination 已经存在,则将其覆盖.</p>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>支持版本: &gt;= 1.0.0</li>
+<li>时间复杂度: O(N) where N is the total number of elements in all given sets.</li>
+<li>返回值: 结果集中元素的个数.</li>
+</ul>
+<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SADD key1 <span class="string">"a"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key1 <span class="string">"b"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key1 <span class="string">"c"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key2 <span class="string">"c"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key2 <span class="string">"d"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key2 <span class="string">"e"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SUNIONSTORE key key1 key2</span><br><span class="line">(<span class="built_in">integer</span>) 5</span><br><span class="line">redis&gt; SMEMBERS key</span><br><span class="line">1) <span class="string">"c"</span></span><br><span class="line">2) <span class="string">"e"</span></span><br><span class="line">3) <span class="string">"b"</span></span><br><span class="line">4) <span class="string">"a"</span></span><br><span class="line">5) <span class="string">"d"</span></span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Spring-Boot例子"><a href="#Spring-Boot例子" class="headerlink" title="Spring Boot例子"></a>Spring Boot例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/redis/2018/05/18/sunion/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1439,134 +1567,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/redis/2018/05/18/sinter/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/redis/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Redis文档">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/redis/2018/05/18/sinter/" itemprop="url">sinter</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-18T11:48:55+08:00">
-                2018-05-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SINTER key [key ...]</span><br></pre></td></tr></table></figure>
-<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>返回指定所有的集合的成员的交集.<br>例如:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">key1 = &#123;a,b,c,d&#125;</span><br><span class="line">key2 = &#123;c&#125;</span><br><span class="line">key3 = &#123;a,c,e&#125;</span><br><span class="line">SINTER key1 key2 key3 = &#123;c&#125;</span><br></pre></td></tr></table></figure></p>
-<p>如果key不存在则被认为是一个空的集合,当给定的集合为空的时候,结果也为空.(一个集合为空，结果一直为空).</p>
-<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
-<li>支持版本: &gt;= 1.0.0</li>
-<li>时间复杂度: O(N*M) worst case where N is the cardinality of the smallest set and M is the number of sets.</li>
-<li>返回值: 结果集成员的列表</li>
-</ul>
-<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">redis&gt; SADD key1 <span class="string">"a"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key1 <span class="string">"b"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key1 <span class="string">"c"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key2 <span class="string">"c"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key2 <span class="string">"d"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SADD key2 <span class="string">"e"</span></span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">redis&gt; SINTER key1 key2</span><br><span class="line">1) <span class="string">"c"</span></span><br><span class="line">redis&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="Spring-Boot例子"><a href="#Spring-Boot例子" class="headerlink" title="Spring Boot例子"></a>Spring Boot例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1611,20 +1611,7 @@
           </div>
 
           <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/redis/archives/">
-              
-                  <span class="site-state-item-count">125</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
+		  
             
               
               
@@ -1634,6 +1621,19 @@
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
+            
+			
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/redis/archives/">
+              
+                  <span class="site-state-item-count">126</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
             
 
           </nav>

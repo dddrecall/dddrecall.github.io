@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="keys," />
+  <meta name="keywords" content="综合," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="语法1WAIT numslaves timeout 解释此命令阻塞当前客户端，直到所有以前的写命令都成功的传输和指定的slaves确认。如果超时，指定以毫秒为单位，即使指定的slaves还没有到达，命令任然返回。 命令始终返回之前写命令发送的slaves的数量，无论是在指定slaves的情况还是达到超时。 注意点:  当’WAIT’返回时，所有之前的写命令保证接收由WAIT返回的slaves的数量">
-<meta name="keywords" content="keys">
+<meta name="description" content="解释通常我们有一些需求，需要让对象直接存储在Redis里面 以下就是举例使用序列化存储对象的例子 jdk 序列化首先是定义一个redisTemplate的Bean1234567891011121314151617/** * jdk（ObjectOutputStream，ObjectInputStream）序列化redis数据, 存储二进制字节码, 所以自定义序列化类 * * @param redi">
+<meta name="keywords" content="综合">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wait">
-<meta property="og:url" content="http://yoursite.com/2018/05/22/wait/index.html">
+<meta property="og:title" content="Serializer for SpringBoot">
+<meta property="og:url" content="http://yoursite.com/2018/05/24/serializer/index.html">
 <meta property="og:site_name" content="Redis文档">
-<meta property="og:description" content="语法1WAIT numslaves timeout 解释此命令阻塞当前客户端，直到所有以前的写命令都成功的传输和指定的slaves确认。如果超时，指定以毫秒为单位，即使指定的slaves还没有到达，命令任然返回。 命令始终返回之前写命令发送的slaves的数量，无论是在指定slaves的情况还是达到超时。 注意点:  当’WAIT’返回时，所有之前的写命令保证接收由WAIT返回的slaves的数量">
+<meta property="og:description" content="解释通常我们有一些需求，需要让对象直接存储在Redis里面 以下就是举例使用序列化存储对象的例子 jdk 序列化首先是定义一个redisTemplate的Bean1234567891011121314151617/** * jdk（ObjectOutputStream，ObjectInputStream）序列化redis数据, 存储二进制字节码, 所以自定义序列化类 * * @param redi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-22T07:56:03.656Z">
+<meta property="og:updated_time" content="2018-05-24T11:03:43.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wait">
-<meta name="twitter:description" content="语法1WAIT numslaves timeout 解释此命令阻塞当前客户端，直到所有以前的写命令都成功的传输和指定的slaves确认。如果超时，指定以毫秒为单位，即使指定的slaves还没有到达，命令任然返回。 命令始终返回之前写命令发送的slaves的数量，无论是在指定slaves的情况还是达到超时。 注意点:  当’WAIT’返回时，所有之前的写命令保证接收由WAIT返回的slaves的数量">
+<meta name="twitter:title" content="Serializer for SpringBoot">
+<meta name="twitter:description" content="解释通常我们有一些需求，需要让对象直接存储在Redis里面 以下就是举例使用序列化存储对象的例子 jdk 序列化首先是定义一个redisTemplate的Bean1234567891011121314151617/** * jdk（ObjectOutputStream，ObjectInputStream）序列化redis数据, 存储二进制字节码, 所以自定义序列化类 * * @param redi">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/22/wait/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/24/serializer/"/>
 
 
 
 
 
-  <title>wait | Redis文档</title>
+  <title>Serializer for SpringBoot | Redis文档</title>
   
 
 
@@ -277,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/redis/2018/05/22/wait/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/redis/2018/05/24/serializer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -294,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">wait</h1>
+          <h1 class="post-title" itemprop="name headline">Serializer for SpringBoot</h1>
         
 
         <div class="post-meta">
@@ -306,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T15:49:33+08:00">
-                2018-05-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-24T14:51:10+08:00">
+                2018-05-24
               </time>
             
 
@@ -344,33 +344,13 @@
       
 
       
-        <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WAIT numslaves timeout</span><br></pre></td></tr></table></figure>
-<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>此命令阻塞当前客户端，直到所有以前的写命令都成功的传输和指定的slaves确认。如果超时，指定以毫秒为单位，即使指定的slaves还没有到达，命令任然返回。</p>
-<p>命令始终返回之前写命令发送的slaves的数量，无论是在指定slaves的情况还是达到超时。</p>
-<p>注意点:</p>
-<ul>
-<li>当’WAIT’返回时，所有之前的写命令保证接收由WAIT返回的slaves的数量。</li>
-<li>如果命令呗当做事务的一部分发送，该命令不阻塞，而是只尽快返回先前写命令的slaves的数量。</li>
-<li>如果timeout是0那意味着永远阻塞。</li>
-<li>由于WAIT返回的是在失败和成功的情况下的slaves的数量。客户端应该检查返回的slaves的数量是等于或更大的复制水平。</li>
-</ul>
-<h4 id="一致性（一致性和等待"><a href="#一致性（一致性和等待" class="headerlink" title="一致性（一致性和等待)"></a>一致性（一致性和等待)</h4><p>请注意，WAIT不会使Redis成为一个强大的一致性存储：虽然同步复制是复制状态机的一部分，但它不是唯一需要的。但是，在Sentinel或Redis群集故障转移的情况下，WAIT可以提高现实世界的数据安全性。</p>
-<p>具体而言，如果给定的写入被传输到一个或多个从属设备，则更有可能（但不能保证），如果主设备出现故障，我们将能够在故障转移期间提升接收写入的从设备：Sentinel和Redis集群将尽最大努力尝试提升可用从属设备中的最佳从属设备。</p>
-<p>但是，这只是尽力而为的尝试，所以仍然可能会丢失同步复制到多个从服务器的写入。</p>
-<h4 id="实施细节"><a href="#实施细节" class="headerlink" title="实施细节"></a>实施细节</h4><p>由于引入了与从节点的部分重新同步（PSYNC功能），Redis从节点使用它们已在复制流中处理的偏移量异步地对其主节点进行ping操作。这用于多种方式：</p>
-<ul>
-<li>检测超时的奴隶。</li>
-<li>断开连接后执行部分重新同步。</li>
-<li>执行WAIT。<br>在实现的特定情况下WAIT，Redis会记住，对于每个客户端，当给定写入命令在给定客户端的上下文中执行时，生成的复制流的复制偏移量。何时WAIT调用Redis检查指定数量的从站是否已经确认了此偏移量或更大的偏移量。</li>
-</ul>
-<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
-<li>支持版本: &gt;= 3.0.0</li>
-<li>时间复杂度: O(1)</li>
-<li>返回值: integer-reply：该命令返回在当前连接上下文中执行的所有写操作所达到的从服务器的数量。</li>
-</ul>
-<h3 id="redis-cli-例子"><a href="#redis-cli-例子" class="headerlink" title="redis-cli 例子"></a>redis-cli 例子</h3><p>在以下示例中，第一次调用WAIT不使用超时，并要求写入达到1个从站。它返回成功。在第二次尝试中，我们放了一个超时，并要求将写入复制到两个从站。由于有一个可用的从站，在一秒钟后WAIT解除阻塞并返回1，达到了从站的数量。</p>
-<p>﻿<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; SET foo bar</span><br><span class="line">OK</span><br><span class="line">&gt; WAIT 1 0</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br><span class="line">&gt; WAIT 2 1000</span><br><span class="line">(<span class="built_in">integer</span>) 1</span><br></pre></td></tr></table></figure></p>
-<h3 id="Spring-Boot例子"><a href="#Spring-Boot例子" class="headerlink" title="Spring Boot例子"></a>Spring Boot例子</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>通常我们有一些需求，需要让对象直接存储在Redis里面</p>
+<p>以下就是举例使用序列化存储对象的例子</p>
+<h3 id="jdk-序列化"><a href="#jdk-序列化" class="headerlink" title="jdk 序列化"></a>jdk 序列化</h3><h4 id="首先是定义一个redisTemplate的Bean"><a href="#首先是定义一个redisTemplate的Bean" class="headerlink" title="首先是定义一个redisTemplate的Bean"></a>首先是定义一个redisTemplate的Bean</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * jdk（ObjectOutputStream，ObjectInputStream）序列化redis数据, 存储二进制字节码, 所以自定义序列化类</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> redisConnectionFactory redis链接工厂</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> ResitTemplate</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Bean</span>(<span class="string">"jdkRedisTemplate"</span>)</span><br><span class="line"><span class="function">RedisTemplate&lt;Object, Object&gt; <span class="title">jdkRedisTemplate</span><span class="params">(RedisConnectionFactory redisConnectionFactory)</span> </span>&#123;</span><br><span class="line">    RedisTemplate&lt;Object, Object&gt; redisTemplate = <span class="keyword">new</span> RedisTemplate&lt;&gt;();</span><br><span class="line">    redisTemplate.setConnectionFactory(redisConnectionFactory);</span><br><span class="line">    redisTemplate.setValueSerializer(<span class="keyword">new</span> JdkSerializationRedisSerializer());</span><br><span class="line">    redisTemplate.setKeySerializer(<span class="keyword">new</span> JdkSerializationRedisSerializer());</span><br><span class="line">    redisTemplate.setHashKeySerializer(<span class="keyword">new</span> JdkSerializationRedisSerializer());</span><br><span class="line">    redisTemplate.setHashValueSerializer(<span class="keyword">new</span> JdkSerializationRedisSerializer());</span><br><span class="line">    redisTemplate.afterPropertiesSet();</span><br><span class="line">    <span class="keyword">return</span> redisTemplate;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>可以注意到上面的redisTemplate的KeySerializer也是Jdk的序列化<br>所以存储到Redis里面的key也会被序列化<br>如需明文存储Key的时候，可以修改key的Serializer为StringRedisSerializer</p>
+<h4 id="下面是jdkRedisTemplate的例子"><a href="#下面是jdkRedisTemplate的例子" class="headerlink" title="下面是jdkRedisTemplate的例子"></a>下面是jdkRedisTemplate的例子</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"jdkRedisTemplate测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">jdkRedisTemplateTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        logger.info(<span class="string">"now is jdkRedisTemplate Test"</span>);</span><br><span class="line">        TestDTO testDTO = <span class="keyword">new</span> TestDTO();</span><br><span class="line">        testDTO.setId(UUID.randomUUID().toString());</span><br><span class="line">        testDTO.setName(UUID.randomUUID().toString());</span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line">        logger.info(<span class="string">"the testKey value will set &#123;&#125;"</span>, testDTO);</span><br><span class="line">        jdkRedisTemplate.opsForValue().set(testKey, testDTO);</span><br><span class="line">        Object value = jdkRedisTemplate.opsForValue().get(testKey);</span><br><span class="line">        <span class="keyword">assert</span> value != <span class="keyword">null</span>;</span><br><span class="line">        logger.info(<span class="string">"get testKey value from redis ,value type is &#123;&#125;,value content is &#123;&#125;"</span>, value.getClass().getSimpleName(), value);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        jdkRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="jackson方式"><a href="#jackson方式" class="headerlink" title="jackson方式"></a>jackson方式</h3><h4 id="首先是定义一个redisTemplate的Bean-1"><a href="#首先是定义一个redisTemplate的Bean-1" class="headerlink" title="首先是定义一个redisTemplate的Bean"></a>首先是定义一个redisTemplate的Bean</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * jackson 方式序列化redis 数据</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> redisConnectionFactory redis链接factory</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> ResitTemplate</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Bean</span>(<span class="string">"jacksonRedisTemplate"</span>)</span><br><span class="line"><span class="function">RedisTemplate&lt;Object, Object&gt; <span class="title">jacksonRedisTemplate</span><span class="params">(RedisConnectionFactory redisConnectionFactory)</span> </span>&#123;</span><br><span class="line">    ObjectMapper objectMapper = <span class="keyword">new</span> ObjectMapper();</span><br><span class="line">    objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);</span><br><span class="line">    objectMapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);</span><br><span class="line"></span><br><span class="line">    Jackson2JsonRedisSerializer&lt;Object&gt; jackson2JsonRedisSerializer = <span class="keyword">new</span> Jackson2JsonRedisSerializer&lt;&gt;(Object.class);</span><br><span class="line">    jackson2JsonRedisSerializer.setObjectMapper(objectMapper);</span><br><span class="line"></span><br><span class="line">    RedisTemplate&lt;Object, Object&gt; redisTemplate = <span class="keyword">new</span> RedisTemplate&lt;&gt;();</span><br><span class="line">    redisTemplate.setConnectionFactory(redisConnectionFactory);</span><br><span class="line">    redisTemplate.setKeySerializer(jackson2JsonRedisSerializer);</span><br><span class="line">    redisTemplate.setValueSerializer(jackson2JsonRedisSerializer);</span><br><span class="line">    redisTemplate.setHashKeySerializer(jackson2JsonRedisSerializer);</span><br><span class="line">    redisTemplate.setHashValueSerializer(jackson2JsonRedisSerializer);</span><br><span class="line">    <span class="keyword">return</span> redisTemplate;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="下面是使用例子"><a href="#下面是使用例子" class="headerlink" title="下面是使用例子"></a>下面是使用例子</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"jacksonRedisTemplate测试"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">jacksonRedisTemplateTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        logger.info(<span class="string">"now is jacksonRedisTemplate Test"</span>);</span><br><span class="line">        TestDTO testDTO = <span class="keyword">new</span> TestDTO();</span><br><span class="line">        testDTO.setId(UUID.randomUUID().toString());</span><br><span class="line">        testDTO.setName(UUID.randomUUID().toString());</span><br><span class="line">        logger.info(<span class="string">"testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line">        logger.info(<span class="string">"the testKey value will set &#123;&#125;"</span>, testDTO);</span><br><span class="line">        jacksonRedisTemplate.opsForValue().set(testKey, testDTO);</span><br><span class="line">        Object value = jacksonRedisTemplate.opsForValue().get(testKey);</span><br><span class="line">        <span class="keyword">assert</span> value != <span class="keyword">null</span>;</span><br><span class="line">        logger.info(<span class="string">"get testKey value from redis ,value type is &#123;&#125;,value content is &#123;&#125;"</span>, value.getClass().getSimpleName(), value);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        jacksonRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -387,7 +367,7 @@
       
         <div class="post-tags">
           
-            <a href="/redis/tags/keys/" rel="tag"># keys</a>
+            <a href="/redis/tags/综合/" rel="tag"># 综合</a>
           
         </div>
       
@@ -400,8 +380,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/redis/2018/05/22/type/" rel="next" title="type">
-                <i class="fa fa-chevron-left"></i> type
+              <a href="/redis/2018/05/23/unwatch/" rel="next" title="unwatch">
+                <i class="fa fa-chevron-left"></i> unwatch
               </a>
             
           </div>
@@ -409,10 +389,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/redis/2018/05/23/multi/" rel="prev" title="multi">
-                multi <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -535,7 +511,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释"><span class="nav-number">2.</span> <span class="nav-text">解释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一致性（一致性和等待"><span class="nav-number">2.1.</span> <span class="nav-text">一致性（一致性和等待)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实施细节"><span class="nav-number">2.2.</span> <span class="nav-text">实施细节</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展"><span class="nav-number">3.</span> <span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#redis-cli-例子"><span class="nav-number">4.</span> <span class="nav-text">redis-cli 例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-Boot例子"><span class="nav-number">5.</span> <span class="nav-text">Spring Boot例子</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解释"><span class="nav-number">1.</span> <span class="nav-text">解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jdk-序列化"><span class="nav-number">2.</span> <span class="nav-text">jdk 序列化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先是定义一个redisTemplate的Bean"><span class="nav-number">2.1.</span> <span class="nav-text">首先是定义一个redisTemplate的Bean</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下面是jdkRedisTemplate的例子"><span class="nav-number">2.2.</span> <span class="nav-text">下面是jdkRedisTemplate的例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jackson方式"><span class="nav-number">3.</span> <span class="nav-text">jackson方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先是定义一个redisTemplate的Bean-1"><span class="nav-number">3.1.</span> <span class="nav-text">首先是定义一个redisTemplate的Bean</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下面是使用例子"><span class="nav-number">3.2.</span> <span class="nav-text">下面是使用例子</span></a></li></ol></li></ol></div>
             
 
           </div>
