@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="解释设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。 超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触发删除动作。 使用PERSIST命令可以清除">
+<meta name="description" content="命令1EXPIRE key seconds 解释设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。 超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触">
 <meta name="keywords" content="keys">
 <meta property="og:type" content="article">
-<meta property="og:title" content="EXPIRE key seconds">
+<meta property="og:title" content="expire">
 <meta property="og:url" content="http://yoursite.com/2018/05/10/expire/index.html">
 <meta property="og:site_name" content="Redis文档">
-<meta property="og:description" content="解释设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。 超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触发删除动作。 使用PERSIST命令可以清除">
+<meta property="og:description" content="命令1EXPIRE key seconds 解释设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。 超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-23T06:49:50.189Z">
+<meta property="og:updated_time" content="2018-05-28T06:39:55.243Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EXPIRE key seconds">
-<meta name="twitter:description" content="解释设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。 超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触发删除动作。 使用PERSIST命令可以清除">
+<meta name="twitter:title" content="expire">
+<meta name="twitter:description" content="命令1EXPIRE key seconds 解释设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。 超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>EXPIRE key seconds | Redis文档</title>
+  <title>expire | Redis文档</title>
   
 
 
@@ -294,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">EXPIRE key seconds</h1>
+          <h1 class="post-title" itemprop="name headline">expire</h1>
         
 
         <div class="post-meta">
@@ -344,7 +344,8 @@
       
 
       
-        <h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。</p>
+        <h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EXPIRE key seconds</span><br></pre></td></tr></table></figure>
+<h3 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h3><p>设置key的过期时间，超过时间后，将会自动删除该key。在Redis的术语中一个key的相关超时是不确定的。</p>
 <p>超时后只有对key执行DEL命令或者SET命令或者GETSET时才会清除。 这意味着，从概念上讲所有改变key的值的操作都会使他清除。 例如，INCR递增key的值，执行LPUSH操作，或者用HSET改变hash的field所有这些操作都会触发删除动作。</p>
 <p>使用PERSIST命令可以清除超时，使其变成一个永久的key。</p>
 <p>如果key被RENAME命令修改，相关的超时时间会转移到新key上面。</p>
@@ -381,7 +382,7 @@
 </ul>
 <h4 id="在复制AOF文件时如何处理过期"><a href="#在复制AOF文件时如何处理过期" class="headerlink" title="在复制AOF文件时如何处理过期"></a>在复制AOF文件时如何处理过期</h4><p>为了获得正确的行为而不牺牲一致性，当一个key过期，DEL将会随着AOF文字一起合成到所有附加的slaves。在master实例中，这种方法是集中的，并且不存在一致性错误的机会。</p>
 <p>然而，当slaves连接到master时，不会独立过期keys（会等到master执行DEL命令），他们任然会在数据集里面存在，所以当slave当选为master时淘汰keys会独立执行，然后成为master。</p>
-
+<h3 id="SpringBoot-测试用例"><a href="#SpringBoot-测试用例" class="headerlink" title="SpringBoot 测试用例"></a>SpringBoot 测试用例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Logger logger = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line"><span class="meta">@Resource</span></span><br><span class="line"><span class="keyword">private</span> StringRedisTemplate stringRedisTemplate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key存在时"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        logger.info(<span class="string">"now random testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line">        String value = UUID.randomUUID().toString();</span><br><span class="line">        <span class="comment">// SET testKey value</span></span><br><span class="line">        stringRedisTemplate.opsForValue().set(testKey, value);</span><br><span class="line">        logger.info(<span class="string">"set testKey &#123;&#125;"</span>, value);</span><br><span class="line">        <span class="comment">// EXPIRE testKey 10</span></span><br><span class="line">        Boolean result = stringRedisTemplate.expire(testKey, <span class="number">10</span>, TimeUnit.SECONDS);</span><br><span class="line">        logger.info(<span class="string">"expire testKey result:&#123;&#125;"</span>, result);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="meta">@DisplayName</span>(<span class="string">"key不存在时"</span>)</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyNotExistTest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    String testKey = String.format(<span class="string">"testKey:%s"</span>, UUID.randomUUID().toString());</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        logger.info(<span class="string">"now random testKey is &#123;&#125;"</span>, testKey);</span><br><span class="line">        <span class="comment">// EXPIRE testKey 10</span></span><br><span class="line">        Boolean result = stringRedisTemplate.expire(testKey, <span class="number">10</span>, TimeUnit.SECONDS);</span><br><span class="line">        logger.info(<span class="string">"expire testKey result:&#123;&#125;"</span>, result);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        stringRedisTemplate.delete(testKey);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -546,7 +547,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解释"><span class="nav-number">1.</span> <span class="nav-text">解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展"><span class="nav-number">2.</span> <span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#刷新过期时间"><span class="nav-number">3.</span> <span class="nav-text">刷新过期时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-Navigation-session"><span class="nav-number">4.</span> <span class="nav-text">案例: Navigation session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附录-Redis-过期时间"><span class="nav-number">5.</span> <span class="nav-text">附录: Redis 过期时间</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Keys的过期时间"><span class="nav-number">5.1.</span> <span class="nav-text">Keys的过期时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#过期精度"><span class="nav-number">5.2.</span> <span class="nav-text">过期精度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#过期和持久"><span class="nav-number">5.3.</span> <span class="nav-text">过期和持久</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redis如何淘汰过期的keys"><span class="nav-number">5.4.</span> <span class="nav-text">Redis如何淘汰过期的keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在复制AOF文件时如何处理过期"><span class="nav-number">5.5.</span> <span class="nav-text">在复制AOF文件时如何处理过期</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#命令"><span class="nav-number">1.</span> <span class="nav-text">命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解释"><span class="nav-number">2.</span> <span class="nav-text">解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展"><span class="nav-number">3.</span> <span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#刷新过期时间"><span class="nav-number">4.</span> <span class="nav-text">刷新过期时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-Navigation-session"><span class="nav-number">5.</span> <span class="nav-text">案例: Navigation session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附录-Redis-过期时间"><span class="nav-number">6.</span> <span class="nav-text">附录: Redis 过期时间</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Keys的过期时间"><span class="nav-number">6.1.</span> <span class="nav-text">Keys的过期时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#过期精度"><span class="nav-number">6.2.</span> <span class="nav-text">过期精度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#过期和持久"><span class="nav-number">6.3.</span> <span class="nav-text">过期和持久</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Redis如何淘汰过期的keys"><span class="nav-number">6.4.</span> <span class="nav-text">Redis如何淘汰过期的keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在复制AOF文件时如何处理过期"><span class="nav-number">6.5.</span> <span class="nav-text">在复制AOF文件时如何处理过期</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringBoot-测试用例"><span class="nav-number">7.</span> <span class="nav-text">SpringBoot 测试用例</span></a></li></ol></div>
             
 
           </div>
