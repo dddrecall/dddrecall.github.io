@@ -484,26 +484,41 @@
     <title><![CDATA[sinter]]></title>
     <url>%2Fredis%2F2018%2F05%2F18%2Fsinter%2F</url>
     <content type="text"><![CDATA[语法1SINTER key [key ...] 解释返回指定所有的集合的成员的交集.例如:1234key1 = &#123;a,b,c,d&#125;key2 = &#123;c&#125;key3 = &#123;a,c,e&#125;SINTER key1 key2 key3 = &#123;c&#125; 如果key不存在则被认为是一个空的集合,当给定的集合为空的时候,结果也为空.(一个集合为空，结果一直为空). 扩展 支持版本: &gt;= 1.0.0 时间复杂度: O(N*M) worst case where N is the cardinality of the smallest set and M is the number of sets. 返回值: 结果集成员的列表 redis-cli 例子123456789101112131415redis&gt; SADD key1 "a"(integer) 1redis&gt; SADD key1 "b"(integer) 1redis&gt; SADD key1 "c"(integer) 1redis&gt; SADD key2 "c"(integer) 1redis&gt; SADD key2 "d"(integer) 1redis&gt; SADD key2 "e"(integer) 1redis&gt; SINTER key1 key21) "c"redis&gt; Spring Boot例子12]]></content>
+      <tags>
+        <tag>set</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[sdiffstore]]></title>
     <url>%2Fredis%2F2018%2F05%2F18%2Fsdiffstore%2F</url>
     <content type="text"><![CDATA[语法1SDIFFSTORE destination key [key ...] 解释该命令类似于 SDIFF, 不同之处在于该命令不返回结果集，而是将结果存放在destination集合中. 如果destination已经存在, 则将其覆盖重写. 扩展 支持版本: &gt;= 1.0.0 时间复杂度: O(N) where N is the total number of elements in all given sets. 返回值: 结果集元素的个数. redis-cli 例子123456789101112131415161718redis&gt; SADD key1 "a"(integer) 1redis&gt; SADD key1 "b"(integer) 1redis&gt; SADD key1 "c"(integer) 1redis&gt; SADD key2 "c"(integer) 1redis&gt; SADD key2 "d"(integer) 1redis&gt; SADD key2 "e"(integer) 1redis&gt; SDIFFSTORE key key1 key2(integer) 2redis&gt; SMEMBERS key1) "b"2) "a"redis&gt; Spring Boot例子12]]></content>
+      <tags>
+        <tag>set</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[sdiff]]></title>
     <url>%2Fredis%2F2018%2F05%2F18%2Fsdiff%2F</url>
     <content type="text"><![CDATA[语法1SDIFF key [key ...] 解释返回的集合元素是第一个key的集合与后面所有key的集合的差集举例:1234key1 = &#123;a,b,c,d&#125;key2 = &#123;c&#125;key3 = &#123;a,c,e&#125;SDIFF key1 key2 key3 = &#123;b,d&#125; 不存在的key认为是空集. 扩展 支持版本: &gt;= 1.0.0 时间复杂度: O(N) where N is the total number of elements in all given sets. 返回值: 结果集的元素. redis-cli 例子12345678910111213141516redis&gt; SADD key1 "a"(integer) 1redis&gt; SADD key1 "b"(integer) 1redis&gt; SADD key1 "c"(integer) 1redis&gt; SADD key2 "c"(integer) 1redis&gt; SADD key2 "d"(integer) 1redis&gt; SADD key2 "e"(integer) 1redis&gt; SDIFF key1 key21) "a"2) "b"redis&gt; Spring Boot例子12]]></content>
+      <tags>
+        <tag>set</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[scard]]></title>
     <url>%2Fredis%2F2018%2F05%2F18%2Fscard%2F</url>
     <content type="text"><![CDATA[语法1SCARD key 解释返回集合存储的key的基数 (集合元素的数量). 扩展 支持版本: &gt;= 1.0.0 时间复杂度: O(1) 返回值: 集合的基数(元素的数量),如果key不存在,则返回 0. redis-cli 例子1234567redis&gt; SADD myset "Hello"(integer) 1redis&gt; SADD myset "World"(integer) 1redis&gt; SCARD myset(integer) 2redis&gt; Spring Boot例子12]]></content>
+      <tags>
+        <tag>set</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[sadd]]></title>
     <url>%2Fredis%2F2018%2F05%2F18%2Fsadd%2F</url>
     <content type="text"><![CDATA[语法1SADD key member [member ...] 解释添加一个或多个指定的member元素到集合的 key中.指定的一个或者多个元素member 如果已经在集合key中存在则忽略.如果集合key 不存在，则新建集合key,并添加member元素到集合key中. 如果key 的类型不是集合则返回错误. 扩展 支持版本: &gt;= 1.0.0 时间复杂度: O(N) where N is the number of members to be added. 返回值: 返回新成功添加到集合里元素的数量，不包括已经存在于集合中的元素. 历史：Redis 2.4 以前的版本每次只能添加一个member元素. redis-cli 例子12345678910redis&gt; SADD myset "Hello"(integer) 1redis&gt; SADD myset "World"(integer) 1redis&gt; SADD myset "World"(integer) 0redis&gt; SMEMBERS myset1) "World"2) "Hello"redis&gt; Spring Boot例子12]]></content>
+      <tags>
+        <tag>set</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[hscan]]></title>
